@@ -4,6 +4,7 @@
       v-for="category in categories"
       :key="category.id"
       :category="category"
+      :animals="animals(category.id)"
     />
   </div>
 </template>
@@ -16,8 +17,13 @@ export default {
   components: { AnimalCategory },
   computed: {
     ...mapGetters({
-      categories: 'animals/getCategories',
+      categories: 'categories/getCategories',
     }),
+  },
+  methods: {
+    animals(category) {
+      return this.$store.getters['animals/getAnimalsWithCategory'](category);
+    },
   },
 };
 </script>

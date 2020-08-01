@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ category.name | translate }}</h2>
+    <h2>{{ $t(`categories.${category.name}`) }}</h2>
 
     <AnimalCategoryItem
       v-for="animal in animals"
@@ -20,12 +20,9 @@ export default {
       type: Object,
       required: true,
     },
-  },
-  computed: {
-    animals() {
-      return this.$store.getters['animals/getAnimalsWithCategory'](
-        this.category.id
-      );
+    animals: {
+      type: Array,
+      required: true,
     },
   },
 };

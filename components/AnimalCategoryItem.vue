@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ animal.name | translate }}
+    {{ $t(`animals.${animal.name}`) }}
   </div>
 </template>
 
