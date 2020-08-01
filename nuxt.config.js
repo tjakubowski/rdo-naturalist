@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
 
 export default {
   /*
@@ -37,7 +37,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['@/plugins/translate.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -55,9 +55,29 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            file: 'en-US.js',
+          },
+          {
+            code: 'pl',
+            file: 'pl-PL.js',
+          },
+        ],
+        defaultLocale: 'en',
+        lazy: true,
+        langDir: 'locales/',
+        vueI18n: {
+          fallbackLocale: 'en',
+        },
+      },
+    ],
   ],
   /*
    ** Axios module configuration
@@ -102,10 +122,10 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)|(\.svg$)/,
           options: {
-            fix: true
-          }
+            fix: true,
+          },
         });
       }
-    }
+    },
   },
-}
+};
