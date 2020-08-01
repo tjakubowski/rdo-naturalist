@@ -37,4 +37,18 @@ export const getters = {
 
 export const mutations = {};
 
-export const actions = {};
+export const actions = {
+  tradeInCategory({ commit, rootGetters }, id) {
+    const animals = rootGetters['animals/getAnimalsWithCategory'](id);
+
+    if (!animals.every((animal) => animal.stamped)) return;
+
+    animals.forEach((animal) =>
+      commit(
+        'animals/SET_STAMPED',
+        { id: animal.id, value: false },
+        { root: true }
+      )
+    );
+  },
+};
