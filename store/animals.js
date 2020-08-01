@@ -1,33 +1,436 @@
-// import { nanoid } from 'nanoid';
-
 export const state = () => ({
   animals: {
-    Qg9XogHd97YQyDXkm4TD1: {
-      id: 'Qg9XogHd97YQyDXkm4TD1',
-      name: {
-        en: 'Hello',
-        pl: 'Cześć!',
-      },
-      category: 'AdSp4j5p34lpShgJ3j1',
+    V7OV442ij23pWcAwJLh1n: {
+      id: 'V7OV442ij23pWcAwJLh1n',
+      name: { en: 'Alpine Goat' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    '2RaYj4XELPlc351w3khsf': {
+      id: '2RaYj4XELPlc351w3khsf',
+      name: { en: 'Angus Bull' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    _E4OCjx7_OEs9UHRS9n8b: {
+      id: '_E4OCjx7_OEs9UHRS9n8b',
+      name: { en: 'Angus Ox' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    bAP45sx6oELB3ID19rLfN: {
+      id: 'bAP45sx6oELB3ID19rLfN',
+      name: { en: 'Berkshire Pig' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    LRgyRS3n0_yTZ4bLaHltt: {
+      id: 'LRgyRS3n0_yTZ4bLaHltt',
+      name: { en: 'Big China Pig' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    'ovxknWx6t3BJ2dL_eLoK-': {
+      id: 'ovxknWx6t3BJ2dL_eLoK-',
+      name: { en: 'Devon Bull' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    '1kUS-8uSxp85hMaseII-O': {
+      id: '1kUS-8uSxp85hMaseII-O',
+      name: { en: 'Devon Ox' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    _NHJ4uQ24c0oI3fyv3_A9: {
+      id: '_NHJ4uQ24c0oI3fyv3_A9',
+      name: { en: 'Florida Cracker Cow' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    'hsLXOKVN63Mqf0uJ-l5n5': {
+      id: 'hsLXOKVN63Mqf0uJ-l5n5',
+      name: { en: 'Hereford Bull' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    'KqEDy5kF-keQWUq_0TVzk': {
+      id: 'KqEDy5kF-keQWUq_0TVzk',
+      name: { en: 'Merino Sheep' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    _mzlKsrxTuiYeEq8hPV_4: {
+      id: '_mzlKsrxTuiYeEq8hPV_4',
+      name: { en: 'Old Spot Pig' },
+      category: '3Amt9rgxHxvUFsWn3Zi6c',
+    },
+    pcE_aQ2Ogtwdc5gDyqT2O: {
+      id: 'pcE_aQ2Ogtwdc5gDyqT2O',
+      name: { en: 'Baja Californian Buck' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    vST9vvMvB1DtIHGqFaRnA: {
+      id: 'vST9vvMvB1DtIHGqFaRnA',
+      name: { en: 'Baja Californian Doe' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    rNvdWQRdV1800Tminkaxx: {
+      id: 'rNvdWQRdV1800Tminkaxx',
+      name: { en: 'Banded Gila Monster' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    '9-vx7nCBCEM-DF-BMeP5R': {
+      id: '9-vx7nCBCEM-DF-BMeP5R',
+      name: { en: 'Black Tailed Rattlesnake' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    yyX0Qqhds2rpXjKkFf8y6: {
+      id: 'yyX0Qqhds2rpXjKkFf8y6',
+      name: { en: 'Collared Peccary' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    'FO-ou80GRBYP0vOBI0tiq': {
+      id: 'FO-ou80GRBYP0vOBI0tiq',
+      name: { en: 'Cougar' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    eL4dfuPo1q7ak1sPUZSgL: {
+      id: 'eL4dfuPo1q7ak1sPUZSgL',
+      name: { en: 'Desert Bighorn Ram' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    '7kvt7uAV9J7WlMP_mXE-n': {
+      id: '7kvt7uAV9J7WlMP_mXE-n',
+      name: { en: 'Desert Bighorn Sheep' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    zlqEB8bfHkgotV1jSQ5wz: {
+      id: 'zlqEB8bfHkgotV1jSQ5wz',
+      name: { en: 'Desert Iguana' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    'pL5BB98HSv9n-ODvTFYA2': {
+      id: 'pL5BB98HSv9n-ODvTFYA2',
+      name: { en: 'Nine-Banded Armadillo' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    '7i-Vj8vU1Z90nKsbslq6i': {
+      id: '7i-Vj8vU1Z90nKsbslq6i',
+      name: { en: 'Sierra Nevada Ram' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    '-AFbKoJ8UlJdn0f5vsK7E': {
+      id: '-AFbKoJ8UlJdn0f5vsK7E',
+      name: { en: 'Sierra Nevada Sheep' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    ztEPkaC9GAJ7yeBMFDzNN: {
+      id: 'ztEPkaC9GAJ7yeBMFDzNN',
+      name: { en: 'Sonoran Buck' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    UF_wKCongPMcf3pWeWTLe: {
+      id: 'UF_wKCongPMcf3pWeWTLe',
+      name: { en: 'Sonoran Doe' },
+      category: 'e_Rd0rQ783aYdN193fkR_',
+    },
+    RbWjxKDoCtQ1jxe6Y0CSx: {
+      id: 'RbWjxKDoCtQ1jxe6Y0CSx',
+      name: { en: 'American Alligator Small' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    Il2ccH257dgapiCS6JSj5: {
+      id: 'Il2ccH257dgapiCS6JSj5',
+      name: { en: 'American Alligator Large' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    'VFTkSQPSSboCLP-1GYNJy': {
+      id: 'VFTkSQPSSboCLP-1GYNJy',
+      name: { en: 'Green Iguana' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    'ilOLEDOr-7u2Zb7u8pvVC': {
+      id: 'ilOLEDOr-7u2Zb7u8pvVC',
+      name: { en: 'Alligator Turtle' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    CzyYnPsCM4EolNILMa5xe: {
+      id: 'CzyYnPsCM4EolNILMa5xe',
+      name: { en: 'Panther' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    'C96yoRAYkmTN4Tz-wcdDb': {
+      id: 'C96yoRAYkmTN4Tz-wcdDb',
+      name: { en: 'Florida Panther' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '9y9F_HvR0bx_eQt6AsMb2': {
+      id: '9y9F_HvR0bx_eQt6AsMb2',
+      name: { en: 'Diamondback Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '4iHMnPuxKx2sTlsVnkQwL': {
+      id: '4iHMnPuxKx2sTlsVnkQwL',
+      name: { en: 'Midland Water Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '8zWeXboTSi5ahdZAHDHWT': {
+      id: '8zWeXboTSi5ahdZAHDHWT',
+      name: { en: 'Timber Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    X_VtzUHdXc5XtYa2lQl2S: {
+      id: 'X_VtzUHdXc5XtYa2lQl2S',
+      name: { en: 'Northern Copperhead Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '9sDQKGBxtTLT6FZW2whv9': {
+      id: '9sDQKGBxtTLT6FZW2whv9',
+      name: { en: 'Southern Copperhead Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '5kNp3j49eeaMKRftwBP8I': {
+      id: '5kNp3j49eeaMKRftwBP8I',
+      name: { en: 'Cottonmouth Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    '8WRHXrq7z0m_7lxbs6fkf': {
+      id: '8WRHXrq7z0m_7lxbs6fkf',
+      name: { en: 'Northern Water Snake' },
+      category: '6h9zXXHQfVBrhsticX1GO',
+    },
+    'dKU8E9Z-j9iYh8-LYWyiU': {
+      id: 'dKU8E9Z-j9iYh8-LYWyiU',
+      name: { en: 'American Badger' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    GyouFZliJxUhpTeKlLktc: {
+      id: 'GyouFZliJxUhpTeKlLktc',
+      name: { en: 'American Bison' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    'Hc8wyuHrJTfw-54t_hcig': {
+      id: 'Hc8wyuHrJTfw-54t_hcig',
+      name: { en: 'American Buck' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    'mJU-PnZ5Ikf79eck_NZTk': {
+      id: 'mJU-PnZ5Ikf79eck_NZTk',
+      name: { en: 'American Doe' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    s7b5RLhTzA1mIMtHn_AWO: {
+      id: 's7b5RLhTzA1mIMtHn_AWO',
+      name: { en: 'California Coyote' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    '5tAs--faKm46PUESNln0m': {
+      id: '5tAs--faKm46PUESNln0m',
+      name: { en: 'Gray Wolf' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    NQLEzFE4WpvTcir2q_es5: {
+      id: 'NQLEzFE4WpvTcir2q_es5',
+      name: { en: 'Rocky Bighorn Ram' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    D1NSQ_IEmiKGjFj4oxcmN: {
+      id: 'D1NSQ_IEmiKGjFj4oxcmN',
+      name: { en: 'Rocky Bighorn Sheep' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    'RlOmNhF9-Tac6-R4OBT0x': {
+      id: 'RlOmNhF9-Tac6-R4OBT0x',
+      name: { en: 'Rocky Bull Elk' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    rUzw_dcmRr8nUo9Qeb8mz: {
+      id: 'rUzw_dcmRr8nUo9Qeb8mz',
+      name: { en: 'Rocky Cow Elk' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    v3BAScsOWeelMukDmFTMU: {
+      id: 'v3BAScsOWeelMukDmFTMU',
+      name: { en: 'Timber Wolf' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    oKspwWj2x6d3JApfg7U8l: {
+      id: 'oKspwWj2x6d3JApfg7U8l',
+      name: { en: 'Whitetail Buck' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    c7xyQOJAE5HxtC0QH7axe: {
+      id: 'c7xyQOJAE5HxtC0QH7axe',
+      name: { en: 'Whitetail Deer' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    '24ekkGkxTa-WS1zsiUkGP': {
+      id: '24ekkGkxTa-WS1zsiUkGP',
+      name: { en: 'Wild Boar' },
+      category: 'gN64lMrUox3sMdkW7-fVU',
+    },
+    pucXXGH_hZjB15hKUKQax: {
+      id: 'pucXXGH_hZjB15hKUKQax',
+      name: { en: 'American Gray Fox' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    wmeibNxmWLxCT90L3zNPl: {
+      id: 'wmeibNxmWLxCT90L3zNPl',
+      name: { en: 'American Muskrat' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    'ZaHDu-fy5030ptGfJ_kqH': {
+      id: 'ZaHDu-fy5030ptGfJ_kqH',
+      name: { en: 'American Red Fox' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    IaAYNjkIlGmqDppjkS0EF: {
+      id: 'IaAYNjkIlGmqDppjkS0EF',
+      name: { en: 'Black Bear' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    hIW2jXglQpCq3vqIdpRiG: {
+      id: 'hIW2jXglQpCq3vqIdpRiG',
+      name: { en: 'Black-Tailed Rabbit' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    ehdVecLEy6RsvWPFvq3ps: {
+      id: 'ehdVecLEy6RsvWPFvq3ps',
+      name: { en: 'Grizzly Bear' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    '4OD7nI2M6ErBMtX8WjsQx': {
+      id: '4OD7nI2M6ErBMtX8WjsQx',
+      name: { en: 'North American Beaver' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    'Z_2LAjjtm9iSm_bI-EAdZ': {
+      id: 'Z_2LAjjtm9iSm_bI-EAdZ',
+      name: { en: 'North American Raccoon' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    au0R2TdkFSGDpXRS9KVnf: {
+      id: 'au0R2TdkFSGDpXRS9KVnf',
+      name: { en: 'Silver Fox' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    '5y8kjhfy7Tkwlm0juu11i': {
+      id: '5y8kjhfy7Tkwlm0juu11i',
+      name: { en: 'Striped Skunk' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    'odcHo_-AhdL_7G95iqrjL': {
+      id: 'odcHo_-AhdL_7G95iqrjL',
+      name: { en: 'Virginia Opossum' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    WF_q2pJcK2pbvWszPA7XL: {
+      id: 'WF_q2pJcK2pbvWszPA7XL',
+      name: { en: 'Western Bull Moose' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
+    },
+    bEFutiIeq5jDCvCHjq03G: {
+      id: 'bEFutiIeq5jDCvCHjq03G',
+      name: { en: 'Western Moose' },
+      category: '11WY3u8Dy-3sw-S9FA0ZX',
     },
   },
   categories: {
-    AdSp4j5p34lpShgJ3j1: {
-      id: 'AdSp4j5p34lpShgJ3j1',
-      name: {
-        en: 'Farmland',
-        pl: 'Udomowione',
-      },
+    '3Amt9rgxHxvUFsWn3Zi6c': {
+      id: '3Amt9rgxHxvUFsWn3Zi6c',
+      name: { en: 'Farmland' },
+    },
+    e_Rd0rQ783aYdN193fkR_: {
+      id: 'e_Rd0rQ783aYdN193fkR_',
+      name: { en: 'Desert' },
+    },
+    '6h9zXXHQfVBrhsticX1GO': {
+      id: '6h9zXXHQfVBrhsticX1GO',
+      name: { en: 'Wetland' },
+    },
+    'gN64lMrUox3sMdkW7-fVU': {
+      id: 'gN64lMrUox3sMdkW7-fVU',
+      name: { en: 'Mountain & Grassland' },
+    },
+    '11WY3u8Dy-3sw-S9FA0ZX': {
+      id: '11WY3u8Dy-3sw-S9FA0ZX',
+      name: { en: 'Forest & River' },
     },
   },
-  animalsList: ['Qg9XogHd97YQyDXkm4TD1'],
-  categoriesList: ['AdSp4j5p34lpShgJ3j1'],
+  animalsList: [
+    'V7OV442ij23pWcAwJLh1n',
+    '2RaYj4XELPlc351w3khsf',
+    '_E4OCjx7_OEs9UHRS9n8b',
+    'bAP45sx6oELB3ID19rLfN',
+    'LRgyRS3n0_yTZ4bLaHltt',
+    'ovxknWx6t3BJ2dL_eLoK-',
+    '1kUS-8uSxp85hMaseII-O',
+    '_NHJ4uQ24c0oI3fyv3_A9',
+    'hsLXOKVN63Mqf0uJ-l5n5',
+    'KqEDy5kF-keQWUq_0TVzk',
+    '_mzlKsrxTuiYeEq8hPV_4',
+    'pcE_aQ2Ogtwdc5gDyqT2O',
+    'vST9vvMvB1DtIHGqFaRnA',
+    'rNvdWQRdV1800Tminkaxx',
+    '9-vx7nCBCEM-DF-BMeP5R',
+    'yyX0Qqhds2rpXjKkFf8y6',
+    'FO-ou80GRBYP0vOBI0tiq',
+    'eL4dfuPo1q7ak1sPUZSgL',
+    '7kvt7uAV9J7WlMP_mXE-n',
+    'zlqEB8bfHkgotV1jSQ5wz',
+    'pL5BB98HSv9n-ODvTFYA2',
+    '7i-Vj8vU1Z90nKsbslq6i',
+    '-AFbKoJ8UlJdn0f5vsK7E',
+    'ztEPkaC9GAJ7yeBMFDzNN',
+    'UF_wKCongPMcf3pWeWTLe',
+    'RbWjxKDoCtQ1jxe6Y0CSx',
+    'Il2ccH257dgapiCS6JSj5',
+    'VFTkSQPSSboCLP-1GYNJy',
+    'ilOLEDOr-7u2Zb7u8pvVC',
+    'CzyYnPsCM4EolNILMa5xe',
+    'C96yoRAYkmTN4Tz-wcdDb',
+    '9y9F_HvR0bx_eQt6AsMb2',
+    '4iHMnPuxKx2sTlsVnkQwL',
+    '8zWeXboTSi5ahdZAHDHWT',
+    'X_VtzUHdXc5XtYa2lQl2S',
+    '9sDQKGBxtTLT6FZW2whv9',
+    '5kNp3j49eeaMKRftwBP8I',
+    '8WRHXrq7z0m_7lxbs6fkf',
+    'dKU8E9Z-j9iYh8-LYWyiU',
+    'GyouFZliJxUhpTeKlLktc',
+    'Hc8wyuHrJTfw-54t_hcig',
+    'mJU-PnZ5Ikf79eck_NZTk',
+    's7b5RLhTzA1mIMtHn_AWO',
+    '5tAs--faKm46PUESNln0m',
+    'NQLEzFE4WpvTcir2q_es5',
+    'D1NSQ_IEmiKGjFj4oxcmN',
+    'RlOmNhF9-Tac6-R4OBT0x',
+    'rUzw_dcmRr8nUo9Qeb8mz',
+    'v3BAScsOWeelMukDmFTMU',
+    'oKspwWj2x6d3JApfg7U8l',
+    'c7xyQOJAE5HxtC0QH7axe',
+    '24ekkGkxTa-WS1zsiUkGP',
+    'pucXXGH_hZjB15hKUKQax',
+    'wmeibNxmWLxCT90L3zNPl',
+    'ZaHDu-fy5030ptGfJ_kqH',
+    'IaAYNjkIlGmqDppjkS0EF',
+    'hIW2jXglQpCq3vqIdpRiG',
+    'ehdVecLEy6RsvWPFvq3ps',
+    '4OD7nI2M6ErBMtX8WjsQx',
+    'Z_2LAjjtm9iSm_bI-EAdZ',
+    'au0R2TdkFSGDpXRS9KVnf',
+    '5y8kjhfy7Tkwlm0juu11i',
+    'odcHo_-AhdL_7G95iqrjL',
+    'WF_q2pJcK2pbvWszPA7XL',
+    'bEFutiIeq5jDCvCHjq03G',
+  ],
+  categoriesList: [
+    '3Amt9rgxHxvUFsWn3Zi6c',
+    'e_Rd0rQ783aYdN193fkR_',
+    '6h9zXXHQfVBrhsticX1GO',
+    'gN64lMrUox3sMdkW7-fVU',
+    '11WY3u8Dy-3sw-S9FA0ZX',
+  ],
+  search: '',
 });
 
 export const getters = {
   getAnimals: (state) => state.animalsList.map((id) => state.animals[id]),
   getAnimalsWithCategory: (state, getters) => (category) =>
     getters.getAnimals.filter((animal) => animal.category === category),
+  getCategories: (state) =>
+    state.categoriesList.map((id) => state.categories[id]),
 };
 
 export const mutations = {};

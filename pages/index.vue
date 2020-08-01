@@ -1,19 +1,22 @@
 <template>
   <div>
-    <div v-for="animal in animals" :key="animal.id">
-      <div>{{ animal.name | translate }}</div>
-      <div>{{ animal.category }}</div>
-    </div>
+    <AnimalCategory
+      v-for="category in categories"
+      :key="category.id"
+      :category="category"
+    />
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+import AnimalCategory from '~/components/AnimalCategory';
 
 export default {
+  components: { AnimalCategory },
   computed: {
     ...mapGetters({
-      animals: 'animals/getAnimals',
+      categories: 'animals/getCategories',
     }),
   },
 };
