@@ -67,10 +67,10 @@ export default {
     western_moose: 'Western Moose',
   },
   categories: {
-    farmland: 'Farmland',
-    desert: 'Desert',
-    wetland: 'Wetland',
-    mountain_grassland: 'Mountain & Grassland',
-    forest_river: 'Forest & River',
+    farmland: 'Udomowione',
+    desert: 'Pustynne',
+    wetland: 'Bagienne',
+    mountain_grassland: 'Górskie i równinne',
+    forest_river: 'Leśne i rzeczne',
   },
 };
