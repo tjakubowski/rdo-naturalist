@@ -62,10 +62,12 @@ export default {
   i18n: {
     locales: [
       {
+        name: 'English',
         code: 'en',
         file: 'en-US.js',
       },
       {
+        name: 'Polish',
         code: 'pl',
         file: 'pl-PL.js',
       },
