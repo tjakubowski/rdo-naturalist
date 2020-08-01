@@ -6,7 +6,7 @@ export const getters = {};
 
 export const mutations = {
   SET_SEARCH_TEXT(state, searchText) {
-    state = searchText;
+    state.searchText = searchText;
   },
 };
 
