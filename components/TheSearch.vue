@@ -1,5 +1,12 @@
 <template>
-  <v-text-field v-model="searchText" rounded dense hide-details filled />
+  <v-text-field
+    v-model="searchText"
+    rounded
+    dense
+    hide-details
+    filled
+    prepend-inner-icon="mdi-magnify"
+  />
 </template>
 
 <script>
@@ -7,12 +14,6 @@ import { mapActions } from 'vuex';
 import debounce from 'lodash.debounce';
 export default {
   name: 'TheSearch',
-  props: {
-    debounceTime: {
-      type: Number,
-      default: 500,
-    },
-  },
   computed: {
     searchText: {
       get() {
@@ -20,7 +21,7 @@ export default {
       },
       set: debounce(function (value) {
         this.setSearchText(value);
-      }, this.debounceTime),
+      }, 300),
     },
   },
   methods: {

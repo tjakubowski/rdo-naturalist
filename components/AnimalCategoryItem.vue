@@ -1,6 +1,7 @@
 <template>
   <div>
-    {{ $t(`animals.${animal.name}`) }}
+    {{ $t(`animals.${animal.name}`) }}, {{ animal.samples }},
+    {{ animal.stamped }}
   </div>
 </template>
 
