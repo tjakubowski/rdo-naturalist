@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 export const state = () => ({
   animals: {
     V7OV442ij23pWcAwJLh1n: {
@@ -531,6 +533,35 @@ export const getters = {
     getters.getAnimals.filter((animal) => animal.category === category),
 };
 
-export const mutations = {};
+export const mutations = {
+  SET_SAMPLES(state, { id, value }) {
+    Vue.set(state.animals[id], 'samples', value);
+  },
+  SET_STAMPED(state, { id, value }) {
+    Vue.set(state.animals[id], 'stamped', value);
+  },
+};
 
-export const actions = {};
+export const actions = {
+  decreaseSamples({ state, commit }, id) {
+    const animalSamples = state.animals[id].samples;
+
+    if (animalSamples < 1) return false;
+
+    commit('SET_SAMPLES', { id, value: animalSamples - 1 });
+    return true;
+  },
+  increaseSamples({ state, commit }, id) {
+    const animalSamples = state.animals[id].samples;
+    commit('SET_SAMPLES', { id, value: animalSamples + 1 });
+  },
+  stampSample({ commit, dispatch }, id) {
+    if (dispatch('decreaseSamples', id))
+      commit('SET_STAMPED', { id, value: true });
+  },
+  revertStamp({ state, commit }, id) {
+    const animalSamples = state.animals[id].samples;
+    commit('SET_SAMPLES', { id, value: animalSamples + 1 });
+    commit('SET_STAMPED', { id, value: false });
+  },
+};
