@@ -6,6 +6,7 @@
     hide-details
     filled
     prepend-inner-icon="mdi-magnify"
+    clearable
   />
 </template>
 
