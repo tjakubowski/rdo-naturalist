@@ -16,7 +16,8 @@
     "lodash.debounce": "^4.0.8",
     "nanoid": "^3.1.12",
     "nuxt": "^2.14.0",
-    "nuxt-i18n": "^6.13.2"
+    "nuxt-i18n": "^6.13.2",
+    "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
