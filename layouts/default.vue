@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-app-bar fixed app>
-      <v-spacer />
+      <the-search />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -12,9 +12,9 @@
 </template>
 
 <script>
+import TheSearch from '~/components/TheSearch';
+
 export default {
-  data() {
-    return {};
-  },
+  components: { TheSearch },
 };
 </script>

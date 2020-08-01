@@ -10,12 +10,13 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapState } from 'vuex';
 import AnimalCategory from '~/components/AnimalCategory';
 
 export default {
   components: { AnimalCategory },
   computed: {
+    ...mapState('search', ['searchText']),
     ...mapGetters({
       categories: 'categories/getCategories',
     }),
