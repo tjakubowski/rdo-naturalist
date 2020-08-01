@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-app-bar fixed app>
-      <the-search />
+      <the-search class="mr-3" />
       <language-selector />
     </v-app-bar>
     <v-main>
