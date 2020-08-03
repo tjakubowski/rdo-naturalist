@@ -2,6 +2,7 @@
   <v-app dark>
     <v-app-bar fixed app>
       <the-search class="mr-3" />
+      <platform-switcher />
       <language-selector />
     </v-app-bar>
     <v-main>
@@ -13,10 +14,11 @@
 </template>
 
 <script>
+import PlatformSwitcher from '@/components/PlatformSwitcher';
 import TheSearch from '~/components/TheSearch';
 import LanguageSelector from '~/components/LanguageSelector';
 
 export default {
-  components: { LanguageSelector, TheSearch },
+  components: { PlatformSwitcher, LanguageSelector, TheSearch },
 };
 </script>
