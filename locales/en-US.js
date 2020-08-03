@@ -14,6 +14,15 @@ export default {
     ps4: 'PlayStation 4',
     xboxone: 'Xbox One',
   },
+  animal_stats: {
+    tracked: 'Tracked',
+    killed: 'Killed',
+    skinned: 'Skinned',
+    studied: 'Studied',
+    sedated: 'Sedated',
+    sampled: 'Sampled',
+    photographed: 'Photographed',
+  },
   animals: {
     floridacow: 'Florida Cracker Cow',
     angusbull: 'Angus Bull',

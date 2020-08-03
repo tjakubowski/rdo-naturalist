@@ -9,6 +9,15 @@ export default {
     change_language: 'Zmień język',
     change_platform: 'Zmień platformę',
   },
+  animal_stats: {
+    tracked: 'Wytropione',
+    killed: 'Zabite',
+    skinned: 'Oskórowane',
+    studied: 'Zbadane',
+    sedated: 'Uśpione',
+    sampled: 'Pobrane próbki',
+    photographed: 'Sfotografowane',
+  },
   animals: {
     floridacow: 'Krowa rasy Florida Cracker',
     angusbull: 'Byk rasy Angus',

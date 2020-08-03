@@ -1,5 +1,14 @@
 export default {
   trade_in_category: 'Consegna',
+  animal_stats: {
+    tracked: 'Esemplari seguiti',
+    killed: 'Esemplari uccisi',
+    skinned: 'Esemplari scuoiati',
+    studied: 'Animale studiato',
+    sedated: 'Esemplari sedati',
+    sampled: 'Esemplari campionati',
+    photographed: 'Esemplari fotografati',
+  },
   animals: {
     floridacow: 'Mucca Florida Cracker',
     angusbull: 'Toro Angus',

@@ -1,5 +1,14 @@
 export default {
   trade_in_category: '交易',
+  animal_stats: {
+    tracked: '已追蹤',
+    killed: '已殺死',
+    skinned: '已剝取',
+    studied: '已研究',
+    sedated: '已麻醉',
+    sampled: '已取得樣本',
+    photographed: '已拍攝',
+  },
   animals: {
     floridacow: '佛罗里达奶牛',
     angusbull: '安格斯公牛',

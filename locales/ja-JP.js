@@ -1,5 +1,14 @@
 export default {
   trade_in_category: '取引する',
+  animal_stats: {
+    tracked: '追跡した数',
+    killed: '仕留めた数',
+    skinned: '皮を剥いだ数',
+    studied: '調査',
+    sedated: '鎮静化させた数',
+    sampled: 'サンプルを採取した数',
+    photographed: '撮影した数',
+  },
   animals: {
     floridacow: 'フロリダクラッカー種の牛',
     angusbull: 'アンガス種の雄牛',

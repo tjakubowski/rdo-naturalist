@@ -1,5 +1,14 @@
 export default {
   trade_in_category: 'Eintauschen',
+  animal_stats: {
+    tracked: 'Aufgespürt',
+    killed: 'Getötet',
+    skinned: 'Gehäutet',
+    studied: 'Untersucht',
+    sedated: 'Betäubt',
+    sampled: 'Probe genommen',
+    photographed: 'Fotografiert',
+  },
   animals: {
     floridacow: 'Florida-Cracker-Rind',
     angusbull: 'Angus-Bulle',

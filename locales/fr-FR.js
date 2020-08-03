@@ -1,5 +1,14 @@
 export default {
   trade_in_category: 'Vendre',
+  animal_stats: {
+    tracked: 'Pistés',
+    killed: 'Tués',
+    skinned: 'Dépecés',
+    studied: 'Étudié',
+    sedated: 'Anesthésiés',
+    sampled: 'Échantillons prélevés',
+    photographed: 'Photographiés',
+  },
   animals: {
     floridacow: 'Alligator américain',
     angusbull: 'Alligator américain (petit)',

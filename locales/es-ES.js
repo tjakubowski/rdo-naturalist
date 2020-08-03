@@ -1,5 +1,14 @@
 export default {
   trade_in_category: 'Vender',
+  animal_stats: {
+    tracked: 'Rastreados',
+    killed: 'Matados',
+    skinned: 'Despellejados',
+    studied: 'Estudiado',
+    sedated: 'Sedados',
+    sampled: 'Muestras tomadas',
+    photographed: 'Fotografías',
+  },
   animals: {
     floridacow: 'Vaca Florida Cracker',
     angusbull: 'Toro Angus',

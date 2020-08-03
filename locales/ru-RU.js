@@ -1,5 +1,14 @@
 export default {
   trade_in_category: 'Обменять',
+  animal_stats: {
+    tracked: 'Выслежено',
+    killed: 'Убито',
+    skinned: 'Освежевано',
+    studied: 'Изучено',
+    sedated: 'Усыплено',
+    sampled: 'Образцов взято',
+    photographed: 'Сфотографировано',
+  },
   animals: {
     floridacow: 'Флоридская кракерская корова',
     angusbull: 'Ангусский бык',

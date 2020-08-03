@@ -1,5 +1,14 @@
 export default {
   trade_in_category: '보상 판매',
+  animal_stats: {
+    tracked: '추적 완료',
+    killed: '처치',
+    skinned: '가죽 벗김',
+    studied: '조사 완료',
+    sedated: '마취함',
+    sampled: '표본 채취함',
+    photographed: '사진 찍음',
+  },
   animals: {
     floridacow: '플로리다 크래커 젖소',
     angusbull: '앵거스 소',
