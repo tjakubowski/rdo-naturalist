@@ -1,32 +1,47 @@
 export const state = () => ({
   categories: {
-    '3Amt9rgxHxvUFsWn3Zi6c': {
-      id: '3Amt9rgxHxvUFsWn3Zi6c',
-      name: 'farmland',
+    farmland: {
+      id: 'farmland',
     },
-    e_Rd0rQ783aYdN193fkR_: {
-      id: 'e_Rd0rQ783aYdN193fkR_',
-      name: 'desert',
+    desert: {
+      id: 'desert',
     },
-    '6h9zXXHQfVBrhsticX1GO': {
-      id: '6h9zXXHQfVBrhsticX1GO',
-      name: 'wetland',
+    wetland: {
+      id: 'wetland',
     },
-    'gN64lMrUox3sMdkW7-fVU': {
-      id: 'gN64lMrUox3sMdkW7-fVU',
-      name: 'mountain_grassland',
+    mountain_and_grassland: {
+      id: 'mountain_and_grassland',
     },
-    '11WY3u8Dy-3sw-S9FA0ZX': {
-      id: '11WY3u8Dy-3sw-S9FA0ZX',
-      name: 'forest_river',
+    forest_and_river: {
+      id: 'forest_and_river',
+    },
+    common_critters: {
+      id: 'common_critters',
+    },
+    legendary_dark: {
+      id: 'legendary_dark',
+    },
+    legendary_light: {
+      id: 'legendary_light',
+    },
+    legendary_red_and_blonde: {
+      id: 'legendary_red_and_blonde',
+    },
+    legendary_patterned: {
+      id: 'legendary_patterned',
     },
   },
   categoriesList: [
-    '3Amt9rgxHxvUFsWn3Zi6c',
-    'e_Rd0rQ783aYdN193fkR_',
-    '6h9zXXHQfVBrhsticX1GO',
-    'gN64lMrUox3sMdkW7-fVU',
-    '11WY3u8Dy-3sw-S9FA0ZX',
+    'farmland',
+    'desert',
+    'wetland',
+    'mountain_and_grassland',
+    'forest_and_river',
+    'common_critters',
+    'legendary_dark',
+    'legendary_light',
+    'legendary_red_and_blonde',
+    'legendary_patterned',
   ],
 });
 
