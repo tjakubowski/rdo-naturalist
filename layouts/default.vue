@@ -22,6 +22,9 @@
         @click="$i18n.setLocale"
       >
         {{ currentLanguge }}
+        <template v-slot:item="{ item }">
+          {{ item.name }}
+        </template>
       </dropdown-button>
     </v-app-bar>
     <v-main>

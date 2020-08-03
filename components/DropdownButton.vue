@@ -22,9 +22,11 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title
-            v-text="$i18n.t(getItemTranslationId(item[translationAttribute]))"
-          />
+          <v-list-item-title>
+            <slot name="item" :item="item">
+              {{ $i18n.t(getItemTranslationId(item[translationAttribute])) }}
+            </slot>
+          </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
