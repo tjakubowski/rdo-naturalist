@@ -9,6 +9,7 @@ export const state = () => ({
 });
 
 export const getters = {
+  isPlaystation: (state) => state.platform === state.availablePlatforms.ps4.id,
   getPlatform: (state) => state.availablePlatforms[state.platform],
   getAvailablePlatforms: (state) =>
     state.availablePlatformsList.map((id) => state.availablePlatforms[id]),
