@@ -68,9 +68,64 @@ export default {
         file: 'en-US.js',
       },
       {
-        name: 'Polish',
+        name: 'Deutsch',
+        code: 'de',
+        file: 'de-DE.js',
+      },
+      {
+        name: 'Español',
+        code: 'es',
+        file: 'es-ES.js',
+      },
+      {
+        name: 'Polski',
         code: 'pl',
         file: 'pl-PL.js',
+      },
+      {
+        name: 'Mexican',
+        code: 'mx',
+        file: 'es-MX.js',
+      },
+      {
+        name: 'Français',
+        code: 'fr',
+        file: 'fr-FR.js',
+      },
+      {
+        name: 'Italiano',
+        code: 'it',
+        file: 'it-IT.js',
+      },
+      {
+        name: 'Português',
+        code: 'pt',
+        file: 'pt-BR.js',
+      },
+      {
+        name: 'Русский',
+        code: 'ru',
+        file: 'ru-RU.js',
+      },
+      {
+        name: '日本語',
+        code: 'jp',
+        file: 'ja-JP.js',
+      },
+      {
+        name: '한국어',
+        code: 'kr',
+        file: 'ko-KR.js',
+      },
+      {
+        name: '简体中文',
+        code: 'cn',
+        file: 'zh-CN.js',
+      },
+      {
+        name: '繁体中文',
+        code: 'tw',
+        file: 'zh-TW.js',
       },
     ],
     defaultLocale: 'en',
