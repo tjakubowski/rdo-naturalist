@@ -10,8 +10,10 @@
         <v-card-title
           v-if="!animal.isLocked"
           v-text="$t(`animals.${animal.id}`)"
-        ></v-card-title>
+        />
       </v-img>
+
+      <v-progress-linear :value="progressPercentage" height="3" />
 
       <v-card-actions>
         <tooltip-button
@@ -69,6 +71,18 @@ export default {
     },
   },
   computed: {
+    progressStatsCompletedCount() {
+      return Object.values(this.animal.progress).reduce(
+        (previous, current) => previous + current,
+        0
+      );
+    },
+    progressStatsCount() {
+      return Object.keys(this.animal.progress).length;
+    },
+    progressPercentage() {
+      return (this.progressStatsCompletedCount / this.progressStatsCount) * 100;
+    },
     canBeStamped() {
       return !this.animal.stamped && this.animal.samples > 0;
     },
