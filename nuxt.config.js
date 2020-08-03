@@ -132,6 +132,7 @@ export default {
     lazy: true,
     langDir: 'locales/',
     vueI18n: {
+      silentTranslationWarn: process.env.NODE_ENV === 'production',
       fallbackLocale: 'en',
     },
   },
