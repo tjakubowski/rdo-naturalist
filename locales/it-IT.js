@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: 'Consegna',
   animals: {
     floridacow: 'Mucca Florida Cracker',
     angusbull: 'Toro Angus',

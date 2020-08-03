@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: 'Vendre',
   animals: {
     floridacow: 'Alligator américain',
     angusbull: 'Alligator américain (petit)',

@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: 'Eintauschen',
   animals: {
     floridacow: 'Florida-Cracker-Rind',
     angusbull: 'Angus-Bulle',

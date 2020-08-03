@@ -1,5 +1,5 @@
 export default {
-  trade_in_category: 'Przekaż kategorię',
+  trade_in_category: 'Przekaż',
   no_animals: 'Nie znaleziono zwierząt',
   decrease_samples: 'Zmniejsz ilość próbek',
   increase_samples: 'Zwiększ ilość próbek',

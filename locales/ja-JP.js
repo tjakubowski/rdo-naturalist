@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: '取引する',
   animals: {
     floridacow: 'フロリダクラッカー種の牛',
     angusbull: 'アンガス種の雄牛',

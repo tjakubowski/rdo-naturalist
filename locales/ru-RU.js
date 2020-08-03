@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: 'Обменять',
   animals: {
     floridacow: 'Флоридская кракерская корова',
     angusbull: 'Ангусский бык',

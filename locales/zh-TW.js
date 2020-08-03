@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: '交易',
   animals: {
     floridacow: '佛罗里达奶牛',
     angusbull: '安格斯公牛',

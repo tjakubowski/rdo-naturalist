@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: 'Vender',
   animals: {
     floridacow: 'Vaca Florida Cracker',
     angusbull: 'Touro Angus',

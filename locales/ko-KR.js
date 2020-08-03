@@ -1,4 +1,5 @@
 export default {
+  trade_in_category: '보상 판매',
   animals: {
     floridacow: '플로리다 크래커 젖소',
     angusbull: '앵거스 소',
