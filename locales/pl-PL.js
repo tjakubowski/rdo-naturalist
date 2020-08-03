@@ -1,4 +1,5 @@
 export default {
+  platform_switch: 'Przełącz platformę',
   animals: {
     alpine_goat: 'Alpine Goat',
     angus_bull: 'Angus Bull',

@@ -1,4 +1,10 @@
 export default {
+  platform_switch: 'Switch platform',
+  platforms: {
+    pc: 'PC',
+    ps4: 'PlayStation 4',
+    xboxone: 'Xbox One',
+  },
   animals: {
     alpine_goat: 'Alpine Goat',
     angus_bull: 'Angus Bull',
