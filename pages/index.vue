@@ -1,10 +1,12 @@
 <template>
   <div>
-    <AnimalCategory
+    <animal-category
       v-for="category in categories"
+      v-show="animalsFiltered(category.id).length > 0"
       :key="category.id"
       :category="category"
-      :animals="animalsFiltered(category.id)"
+      :animals="animals(category.id)"
+      :animals-filtered="animalsFiltered(category.id)"
     />
   </div>
 </template>
@@ -28,7 +30,7 @@ export default {
     animalsFiltered(category) {
       return this.animals(category).filter((animal) =>
         this.$i18n
-          .t(`animals.${animal.name}`)
+          .t(`animals.${animal.id}`)
           .toLowerCase()
           .includes(this.searchText.toLowerCase())
       );
