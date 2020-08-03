@@ -5,7 +5,10 @@ export default {
   increase_samples: 'Increase the number of samples',
   stamp_sample: 'Mark as stamped',
   revert_stamp: 'Undo',
-  platform_switch: 'Switch platform',
+  settings: {
+    change_language: 'Change language',
+    change_platform: 'Change platform',
+  },
   platforms: {
     pc: 'PC',
     ps4: 'PlayStation 4',
