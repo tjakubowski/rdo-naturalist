@@ -1,5 +1,6 @@
 export default {
-  animals: {floridacow: 'Vaca Florida Cracker',
+  animals: {
+    floridacow: 'Vaca Florida Cracker',
     angusbull: 'Touro Angus',
     devonbull: 'Touro Devon',
     hfbull: 'Touro Hereford',
@@ -31,12 +32,12 @@ export default {
     flopanther: 'Pantera-da-Flórida',
     alligator_m: 'Jacaré-Americano',
     diamondsnake: 'Cascavel-Diamante',
-    midlandsnake: 'Cobra-d'Água-Midland',
+    midlandsnake: "Cobra-d'Água-Midland",
     timbersnake: 'Cascavel-dos-Bosques',
     snakecopperhead_northern: 'Serpente-Mocassim-Cabeça-de-Cobre do Norte',
     snakecopperhead_southern: 'Serpente-Mocassim-Cabeça-de-Cobre do Sul',
     cottonsnake: 'Mocassim-Aquática',
-    northernsnake: 'Cobra-d'Água-do-Norte',
+    northernsnake: "Cobra-d'Água-do-Norte",
     rockyelk: 'Uapiti-das-Montanhas-Rochosas Macho',
     rockyelkf: 'Uapiti-das-Montanhas-Rochosas Fêmea',
     badger: 'Texugo-Americano',
@@ -116,7 +117,8 @@ export default {
     legendary_fox2_net: 'Raposa-Mármore Lendária',
     legendary_fox3_net: 'Raposa Cross Lendária',
     legendary_panther3_net: '#N/A',
-    legendary_ram2_net: 'Carneiro-do-Chifre-de-Calcário Lendário',},
+    legendary_ram2_net: 'Carneiro-do-Chifre-de-Calcário Lendário',
+  },
   categories: {
     farmland: 'Animais Rurais',
     desert: 'Animais de Deserto',
