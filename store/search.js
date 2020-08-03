@@ -2,7 +2,9 @@ export const state = () => ({
   searchText: '',
 });
 
-export const getters = {};
+export const getters = {
+  getSearchText: (state) => state.searchText || '',
+};
 
 export const mutations = {
   SET_SEARCH_TEXT(state, searchText) {

@@ -21,6 +21,7 @@ export default {
     ...mapState('search', ['searchText']),
     ...mapGetters({
       categories: 'categories/getCategories',
+      searchText: 'search/getSearchText',
     }),
   },
   methods: {
