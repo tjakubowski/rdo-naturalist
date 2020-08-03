@@ -2,8 +2,27 @@
   <v-app dark>
     <v-app-bar fixed app>
       <the-search class="mr-3" />
-      <platform-switcher />
-      <language-selector />
+
+      <dropdown-button
+        :items="availablePlatforms"
+        prepend-item-translation="platforms"
+        icon-attribute="icon"
+        tooltip-id="settings.change_platform"
+        @click="setPlatform"
+      >
+        <v-icon small>{{ platform.icon }}</v-icon>
+      </dropdown-button>
+
+      <dropdown-button
+        :items="languages"
+        emit-attribute="code"
+        id-attribute="code"
+        translation-attribute="name"
+        tooltip-id="settings.change_language"
+        @click="$i18n.setLocale"
+      >
+        {{ currentLanguge }}
+      </dropdown-button>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -14,11 +33,26 @@
 </template>
 
 <script>
-import PlatformSwitcher from '@/components/PlatformSwitcher';
+import DropdownButton from '@/components/DropdownButton';
+import { mapActions, mapGetters } from 'vuex';
 import TheSearch from '~/components/TheSearch';
-import LanguageSelector from '~/components/LanguageSelector';
 
 export default {
-  components: { PlatformSwitcher, LanguageSelector, TheSearch },
+  components: { DropdownButton, TheSearch },
+  computed: {
+    ...mapGetters({
+      platform: 'platform/getPlatform',
+      availablePlatforms: 'platform/getAvailablePlatforms',
+    }),
+    currentLanguge() {
+      return this.$i18n.locale;
+    },
+    languages() {
+      return this.$i18n.locales;
+    },
+  },
+  methods: {
+    ...mapActions('platform', ['setPlatform']),
+  },
 };
 </script>
