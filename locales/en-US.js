@@ -6,8 +6,8 @@ export default {
   },
   category: {
     trade_in: 'Trade in',
-    reset_progress: 'Reset category',
-    reset_progress_all: 'Reset all categories',
+    reset_progress: 'Reset category progress',
+    reset_progress_all: 'Reset progress',
   },
   animal: {
     progress: 'Total Progress',
