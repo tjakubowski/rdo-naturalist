@@ -2184,4 +2184,9 @@ export const actions = {
     });
     commit('SET_PROGRESS', { id, value: animalProgress });
   },
+  resetAnimal({ state, commit, dispatch }, id) {
+    dispatch('setProgress', { id, progress: [] });
+    commit('SET_STAMPED', { id, value: false });
+    commit('SET_SAMPLES', { id, value: 0 });
+  },
 };

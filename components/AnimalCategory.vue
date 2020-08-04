@@ -11,6 +11,13 @@
 
       <v-spacer />
       <v-btn
+        color="error"
+        class="mx-3"
+        outlined
+        @click="resetCategory(category.id)"
+        >{{ $i18n.t('reset_category') }}</v-btn
+      >
+      <v-btn
         color="success"
         :disabled="!isCompleted"
         @click="tradeInCategory(category.id)"
@@ -58,7 +65,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions('categories', ['tradeInCategory']),
+    ...mapActions('categories', ['tradeInCategory', 'resetCategory']),
   },
 };
 </script>

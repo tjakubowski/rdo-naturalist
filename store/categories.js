@@ -66,4 +66,11 @@ export const actions = {
       )
     );
   },
+  resetCategory({ dispatch, rootGetters }, id) {
+    const animals = rootGetters['animals/getAnimalsWithCategory'](id);
+
+    animals.forEach((animal) =>
+      dispatch('animals/resetAnimal', animal.id, { root: true })
+    );
+  },
 };
