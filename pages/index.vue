@@ -1,14 +1,6 @@
 <template>
   <div>
     <v-row>
-      <v-col class="text-right">
-        <v-btn color="error" text @click="resetCategoriesProgress">
-          {{ $i18n.t('category.reset_progress_all') }}
-        </v-btn>
-      </v-col>
-    </v-row>
-
-    <v-row>
       <v-col>
         <category-filters :categories="categories" />
       </v-col>
@@ -64,7 +56,6 @@ export default {
     },
   },
   methods: {
-    ...mapActions('categories', ['resetCategoriesProgress']),
     ...mapActions('filters', ['resetFilters']),
     animalsInCategory(category) {
       return this.$store.getters['animals/getAnimalsWithCategory'](category);
