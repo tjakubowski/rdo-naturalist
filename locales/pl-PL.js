@@ -8,9 +8,10 @@ export default {
   category: {
     trade_in: 'Przekaż',
     options: 'Opcje',
-    complete_progress: 'Ukończ postępy w kategorii',
-    reset_progress: 'Zresetuj postęp kategorii',
-    reset_progress_all: 'Zresetuj cały postęp',
+    complete_progress: 'Zakończ badania kategorii',
+    complete_progress_all: 'Zakończ wszystkie badania',
+    reset_progress: 'Zresetuj postęp badań kategorii',
+    reset_progress_all: 'Zresetuj cały postęp badań',
   },
   animal: {
     progress: 'Łączne postępy',
@@ -18,8 +19,8 @@ export default {
     increase_samples: 'Zwiększ ilość próbek',
     mark_as_stamped: 'Oznacz jako ostemplowane',
     undo_stamp: 'Cofnij',
-    reset_progress: 'Zresetuj postęp',
-    complete_progress: 'Uzupełnij postęp',
+    reset_progress: 'Zresetuj postęp badań',
+    complete_progress: 'Zakończ badania',
   },
   settings: {
     change_language: 'Zmień język',

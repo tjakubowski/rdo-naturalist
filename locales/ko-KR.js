@@ -9,6 +9,7 @@ export default {
     trade_in: '보상 판매',
     options: null,
     complete_progress: null,
+    complete_progress_all: null,
     reset_progress: null,
     reset_progress_all: null,
   },

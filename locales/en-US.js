@@ -8,9 +8,10 @@ export default {
   category: {
     trade_in: 'Trade in',
     options: 'Options',
-    complete_progress: 'Complete category',
-    reset_progress: 'Reset category progress',
-    reset_progress_all: 'Reset progress',
+    complete_progress: 'Complete category research',
+    complete_progress_all: 'Complete all categories research',
+    reset_progress: 'Reset category research progress',
+    reset_progress_all: 'Reset research progress',
   },
   animal: {
     progress: 'Total Progress',
@@ -18,8 +19,8 @@ export default {
     increase_samples: 'Increase the number of samples',
     mark_as_stamped: 'Mark as stamped',
     undo_stamp: 'Undo',
-    reset_progress: 'Reset animal progress',
-    complete_progress: 'Complete animal progress',
+    reset_progress: 'Reset animal research progress',
+    complete_progress: 'Complete animal research',
   },
   settings: {
     change_language: 'Change language',
