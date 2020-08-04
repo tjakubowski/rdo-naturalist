@@ -52,6 +52,11 @@
         >
           <v-icon small>mdi-restore</v-icon>
         </tooltip-button>
+
+        <animal-category-item-progress
+          :progress="animal.progress"
+          @change="setProgress({ id: animal.id, progress: $event })"
+        />
       </v-card-actions>
     </v-card>
   </v-col>
@@ -59,11 +64,12 @@
 
 <script>
 import { mapActions } from 'vuex';
+import AnimalCategoryItemProgress from '@/components/AnimalCategoryItemProgress';
 import TooltipButton from '~/components/TooltipButton';
 
 export default {
   name: 'AnimalCategoryItem',
-  components: { TooltipButton },
+  components: { AnimalCategoryItemProgress, TooltipButton },
   props: {
     animal: {
       type: Object,
@@ -99,6 +105,7 @@ export default {
       'increaseSamples',
       'stampSample',
       'revertStamp',
+      'setProgress',
     ]),
   },
 };

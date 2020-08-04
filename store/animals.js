@@ -2150,6 +2150,9 @@ export const mutations = {
   SET_STAMPED(state, { id, value }) {
     Vue.set(state.animals[id], 'stamped', value);
   },
+  SET_PROGRESS(state, { id, value }) {
+    Vue.set(state.animals[id], 'progress', value);
+  },
 };
 
 export const actions = {
@@ -2173,5 +2176,12 @@ export const actions = {
     const animalSamples = state.animals[id].samples;
     commit('SET_SAMPLES', { id, value: animalSamples + 1 });
     commit('SET_STAMPED', { id, value: false });
+  },
+  setProgress({ state, commit }, { id, progress }) {
+    const animalProgress = { ...state.animals[id].progress };
+    Object.keys(animalProgress).forEach((stat) => {
+      animalProgress[stat] = progress.includes(stat);
+    });
+    commit('SET_PROGRESS', { id, value: animalProgress });
   },
 };
