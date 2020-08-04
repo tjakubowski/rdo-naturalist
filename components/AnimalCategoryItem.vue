@@ -18,7 +18,7 @@
       <v-card-actions>
         <tooltip-button
           :disabled="animal.samples < 1"
-          tooltip="decrease_samples"
+          tooltip="animal.decrease_samples"
           @click="decreaseSamples(animal.id)"
         >
           <v-icon small>mdi-minus</v-icon>
@@ -29,7 +29,7 @@
         </v-chip>
 
         <tooltip-button
-          tooltip="increase_samples"
+          tooltip="animal.increase_samples"
           @click="increaseSamples(animal.id)"
         >
           <v-icon small>mdi-plus</v-icon>
@@ -40,7 +40,7 @@
         <tooltip-button
           v-if="!animal.stamped"
           :disabled="!canBeStamped"
-          tooltip="stamp_sample"
+          tooltip="animal.mark_as_stamped"
           @click="stampSample(animal.id)"
         >
           <v-icon small>mdi-stamper</v-icon>
@@ -48,7 +48,7 @@
 
         <tooltip-button
           v-else
-          tooltip="revert_stamp"
+          tooltip="animal.undo_stamp"
           @click="revertStamp(animal.id)"
         >
           <v-icon small>mdi-restore</v-icon>

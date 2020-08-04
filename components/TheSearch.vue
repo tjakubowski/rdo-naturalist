@@ -7,6 +7,7 @@
     filled
     prepend-inner-icon="mdi-magnify"
     clearable
+    :placeholder="$i18n.t('filters.search_animals')"
   />
 </template>
 

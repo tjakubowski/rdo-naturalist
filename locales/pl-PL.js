@@ -1,14 +1,30 @@
 export default {
-  trade_in_category: 'Przekaż',
-  no_animals: 'Nie znaleziono zwierząt',
-  decrease_samples: 'Zmniejsz ilość próbek',
-  increase_samples: 'Zwiększ ilość próbek',
-  stamp_sample: 'Oznacz jako ostemplowane',
-  revert_stamp: 'Cofnij',
-  animal_progress: 'Łączne postępy',
+  filters: {
+    category_filters: 'Filtry kategorii',
+    search_animals: 'Znajdź zwierzę',
+    no_animals: 'Nie znaleziono zwierząt',
+  },
+  category: {
+    trade_in: 'Przekaż',
+    reset_progress: 'Zresetuj kategorię',
+    reset_progress_all: 'Zresetuj cały postęp',
+  },
+  animal: {
+    progress: 'Łączne postępy',
+    decrease_samples: 'Zmniejsz ilość próbek',
+    increase_samples: 'Zwiększ ilość próbek',
+    mark_as_stamped: 'Oznacz jako ostemplowane',
+    undo_stamp: 'Cofnij',
+    reset_progress: 'Zresetuj postęp',
+  },
   settings: {
     change_language: 'Zmień język',
     change_platform: 'Zmień platformę',
+  },
+  platforms: {
+    pc: null,
+    ps4: null,
+    xboxone: null,
   },
   animal_stats: {
     tracked: 'Wytropione',

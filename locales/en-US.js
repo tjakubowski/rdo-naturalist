@@ -1,11 +1,22 @@
 export default {
-  trade_in_category: 'Trade in',
-  no_animals: 'No animals found',
-  decrease_samples: 'Decrease the number of samples',
-  increase_samples: 'Increase the number of samples',
-  stamp_sample: 'Mark as stamped',
-  revert_stamp: 'Undo',
-  animal_progress: 'Total Progress',
+  filters: {
+    category_filters: 'Category filters',
+    search_animals: 'Search animals',
+    no_animals: 'No animals found',
+  },
+  category: {
+    trade_in: 'Trade in',
+    reset_progress: 'Reset category',
+    reset_progress_all: 'Reset all categories',
+  },
+  animal: {
+    progress: 'Total Progress',
+    decrease_samples: 'Decrease the number of samples',
+    increase_samples: 'Increase the number of samples',
+    mark_as_stamped: 'Mark as stamped',
+    undo_stamp: 'Undo',
+    reset_progress: 'Reset animal',
+  },
   settings: {
     change_language: 'Change language',
     change_platform: 'Change platform',

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-btn color="error" class="mx-3" outlined @click="resetCategories">{{
-      $i18n.t('reset_categories')
+    <v-btn color="error" class="mx-3" text @click="resetCategories">{{
+      $i18n.t('category.reset_progress_all')
     }}</v-btn>
     <the-category-filters :categories="categories" />
     <animal-category

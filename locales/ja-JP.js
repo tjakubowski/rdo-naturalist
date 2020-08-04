@@ -1,6 +1,31 @@
 export default {
-  trade_in_category: '取引する',
-  animal_progress: '総合進行状況',
+  filters: {
+    category_filters: null,
+    search_animals: null,
+    no_animals: null,
+  },
+  category: {
+    trade_in: '取引する',
+    reset_progress: null,
+    reset_progress_all: null,
+  },
+  animal: {
+    progress: '総合進行状況',
+    decrease_samples: null,
+    increase_samples: null,
+    mark_as_stamped: null,
+    undo_stamp: null,
+    reset_progress: null,
+  },
+  settings: {
+    change_language: null,
+    change_platform: null,
+  },
+  platforms: {
+    pc: null,
+    ps4: null,
+    xboxone: null,
+  },
   animal_stats: {
     tracked: '追跡した数',
     killed: '仕留めた数',

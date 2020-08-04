@@ -1,6 +1,31 @@
 export default {
-  trade_in_category: 'Vender',
-  animal_progress: 'Progreso total',
+  filters: {
+    category_filters: null,
+    search_animals: null,
+    no_animals: null,
+  },
+  category: {
+    trade_in: 'Vender',
+    reset_progress: null,
+    reset_progress_all: null,
+  },
+  animal: {
+    progress: 'Progreso total',
+    decrease_samples: null,
+    increase_samples: null,
+    mark_as_stamped: null,
+    undo_stamp: null,
+    reset_progress: null,
+  },
+  settings: {
+    change_language: null,
+    change_platform: null,
+  },
+  platforms: {
+    pc: null,
+    ps4: null,
+    xboxone: null,
+  },
   animal_stats: {
     tracked: 'Rastreados',
     killed: 'Matados',

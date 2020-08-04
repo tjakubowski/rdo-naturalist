@@ -14,15 +14,15 @@
       <v-btn
         color="error"
         class="mx-3"
-        outlined
+        text
         @click="resetCategory(category.id)"
-        >{{ $i18n.t('reset_category') }}</v-btn
+        >{{ $i18n.t('category.reset_progress') }}</v-btn
       >
       <v-btn
         color="success"
         :disabled="!isCompleted"
         @click="tradeInCategory(category.id)"
-        >{{ $i18n.t('trade_in_category') }}</v-btn
+        >{{ $i18n.t('category.trade_in') }}</v-btn
       >
     </v-col>
 

@@ -1,6 +1,31 @@
 export default {
-  trade_in_category: '交易',
-  animal_progress: '總進度',
+  filters: {
+    category_filters: null,
+    search_animals: null,
+    no_animals: null,
+  },
+  category: {
+    trade_in: '交易',
+    reset_progress: null,
+    reset_progress_all: null,
+  },
+  animal: {
+    progress: '總進度',
+    decrease_samples: null,
+    increase_samples: null,
+    mark_as_stamped: null,
+    undo_stamp: null,
+    reset_progress: null,
+  },
+  settings: {
+    change_language: null,
+    change_platform: null,
+  },
+  platforms: {
+    pc: null,
+    ps4: null,
+    xboxone: null,
+  },
   animal_stats: {
     tracked: '已追蹤',
     killed: '已殺死',

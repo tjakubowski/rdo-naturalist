@@ -11,6 +11,7 @@
     prepend-icon="mdi-filter-variant"
     item-value="id"
     solo
+    :label="$i18n.t('filters.category_filters')"
     :return-object="false"
   >
     <template v-slot:item="{ item }">

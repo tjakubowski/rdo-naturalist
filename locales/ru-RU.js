@@ -1,6 +1,31 @@
 export default {
-  trade_in_category: 'Обменять',
-  animal_progress: 'Общий прогресс',
+  filters: {
+    category_filters: null,
+    search_animals: null,
+    no_animals: null,
+  },
+  category: {
+    trade_in: 'Обменять',
+    reset_progress: null,
+    reset_progress_all: null,
+  },
+  animal: {
+    progress: 'Общий прогресс',
+    decrease_samples: null,
+    increase_samples: null,
+    mark_as_stamped: null,
+    undo_stamp: null,
+    reset_progress: null,
+  },
+  settings: {
+    change_language: null,
+    change_platform: null,
+  },
+  platforms: {
+    pc: null,
+    ps4: null,
+    xboxone: null,
+  },
   animal_stats: {
     tracked: 'Выслежено',
     killed: 'Убито',

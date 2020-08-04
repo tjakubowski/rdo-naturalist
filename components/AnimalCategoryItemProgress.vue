@@ -7,7 +7,7 @@
             ><v-icon small>mdi-dots-vertical</v-icon></v-btn
           >
         </template>
-        <span>{{ $i18n.t('animal_progress') }}</span>
+        <span>{{ $i18n.t('animal.progress') }}</span>
       </v-tooltip>
     </template>
 
