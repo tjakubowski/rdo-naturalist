@@ -11,7 +11,7 @@
       </v-tooltip>
     </template>
 
-    <v-list dense>
+    <v-list dense nav>
       <v-list-item-group v-model="progressValue" multiple>
         <v-list-item
           v-for="(value, statName) in progress"
