@@ -6,6 +6,8 @@ export default {
   },
   category: {
     trade_in: 'Eintauschen',
+    options: null,
+    complete_progress: null,
     reset_progress: null,
     reset_progress_all: null,
   },
@@ -16,6 +18,7 @@ export default {
     mark_as_stamped: null,
     undo_stamp: null,
     reset_progress: null,
+    complete_progress: null,
   },
   settings: {
     change_language: null,

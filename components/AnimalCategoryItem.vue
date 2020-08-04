@@ -56,7 +56,10 @@
 
         <animal-category-item-progress
           :progress="animal.progress"
+          :progress-percentage="progressPercentage"
           @change="setProgress({ id: animal.id, progress: $event })"
+          @complete-progress="completeAnimalProgress(animal.id)"
+          @reset-progress="resetAnimalProgress(animal.id)"
         />
       </v-card-actions>
     </v-card>
@@ -109,6 +112,8 @@ export default {
       'stampSample',
       'revertStamp',
       'setProgress',
+      'resetAnimalProgress',
+      'completeAnimalProgress',
     ]),
   },
 };

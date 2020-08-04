@@ -28,10 +28,10 @@ export default {
   },
   methods: {
     resetCategoryProgress() {
-      this.$emit('reset-category');
+      this.$emit('reset-progress');
     },
     completeCategoryProgress() {
-      this.$emit('complete-category');
+      this.$emit('complete-progress');
     },
   },
 };

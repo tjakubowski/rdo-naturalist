@@ -1,23 +1,24 @@
 export default {
-  trade_in_category: '보상 판매',
-  animal_progress: '전체 진행 상황',
   filters: {
     category_filters: null,
     animal_filter: null,
     no_animals: null,
   },
   category: {
-    trade_in: 'Eintauschen',
+    trade_in: '보상 판매',
+    options: null,
+    complete_progress: null,
     reset_progress: null,
     reset_progress_all: null,
   },
   animal: {
-    progress: 'Gesamtfortschritt',
+    progress: '전체 진행 상황',
     decrease_samples: null,
     increase_samples: null,
     mark_as_stamped: null,
     undo_stamp: null,
     reset_progress: null,
+    complete_progress: null,
   },
   settings: {
     change_language: null,

@@ -7,7 +7,7 @@ export default {
   category: {
     trade_in: 'Przekaż',
     options: 'Opcje',
-    complete_progress: 'Ukończ kategorię',
+    complete_progress: 'Ukończ postępy w kategorii',
     reset_progress: 'Zresetuj postęp kategorii',
     reset_progress_all: 'Zresetuj cały postęp',
   },
@@ -18,6 +18,7 @@ export default {
     mark_as_stamped: 'Oznacz jako ostemplowane',
     undo_stamp: 'Cofnij',
     reset_progress: 'Zresetuj postęp',
+    complete_progress: 'Uzupełnij postęp',
   },
   settings: {
     change_language: 'Zmień język',

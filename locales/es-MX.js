@@ -1,23 +1,24 @@
 export default {
-  trade_in_category: 'Intercambiar',
-  animal_progress: 'Progreso total',
   filters: {
     category_filters: null,
     animal_filter: null,
     no_animals: null,
   },
   category: {
-    trade_in: 'Eintauschen',
+    trade_in: 'Intercambiar',
+    options: null,
+    complete_progress: null,
     reset_progress: null,
     reset_progress_all: null,
   },
   animal: {
-    progress: 'Gesamtfortschritt',
+    progress: 'Progreso total',
     decrease_samples: null,
     increase_samples: null,
     mark_as_stamped: null,
     undo_stamp: null,
     reset_progress: null,
+    complete_progress: null,
   },
   settings: {
     change_language: null,

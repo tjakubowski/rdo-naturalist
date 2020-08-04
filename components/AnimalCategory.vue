@@ -20,8 +20,8 @@
       >
 
       <animal-category-options
-        @reset-category="resetCategoryProgress(category.id)"
-        @complete-category="completeCategoryProgress(category.id)"
+        @reset-progress="resetCategoryProgress(category.id)"
+        @complete-progress="completeCategoryProgress(category.id)"
       />
     </v-col>
 

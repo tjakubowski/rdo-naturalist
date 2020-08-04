@@ -36,6 +36,26 @@
           </template>
         </v-list-item>
       </v-list-item-group>
+
+      <v-divider></v-divider>
+
+      <v-list-item :disabled="!canProgress" @click="$emit('complete-progress')">
+        <v-list-item-icon>
+          <v-icon :disabled="!canProgress">mdi-check-all</v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title v-text="$i18n.t('animal.complete_progress')" />
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-list-item :disabled="!canReset" @click="$emit('reset-progress')">
+        <v-list-item-icon>
+          <v-icon :disabled="!canReset">mdi-restore</v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title v-text="$i18n.t('animal.reset_progress')" />
+        </v-list-item-content>
+      </v-list-item>
     </v-list>
   </v-menu>
 </template>
@@ -46,6 +66,10 @@ export default {
   props: {
     progress: {
       type: Object,
+      required: true,
+    },
+    progressPercentage: {
+      type: Number,
       required: true,
     },
   },
@@ -59,6 +83,12 @@ export default {
       set(newProgress) {
         this.$emit('change', newProgress);
       },
+    },
+    canProgress() {
+      return this.progressPercentage < 100;
+    },
+    canReset() {
+      return this.progressPercentage > 0;
     },
   },
 };

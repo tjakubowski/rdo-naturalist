@@ -17,7 +17,8 @@ export default {
     increase_samples: 'Increase the number of samples',
     mark_as_stamped: 'Mark as stamped',
     undo_stamp: 'Undo',
-    reset_progress: 'Reset animal',
+    reset_progress: 'Reset animal progress',
+    complete_progress: 'Complete animal progress',
   },
   settings: {
     change_language: 'Change language',
