@@ -1,35 +1,22 @@
 <template>
-  <v-combobox
-    v-model="categoryFilters"
-    :items="categories"
-    chips
-    clearable
-    deletable-chips
-    hide-selected
-    hide-details
-    multiple
-    prepend-icon="mdi-filter-variant"
-    item-value="id"
-    solo
-    :label="$i18n.t('filters.category_filters')"
-    :return-object="false"
-  >
-    <template v-slot:item="{ item }">
-      {{ $i18n.t(`categories.${item.id}`) }}
-    </template>
-    <template v-slot:selection="data">
+  <div>
+    <v-chip-group
+      v-model="categoryFilters"
+      multiple
+      show-arrows
+      active-class="success--text"
+    >
       <v-chip
-        :key="data.item"
-        close
-        v-bind="data.attrs"
-        :input-value="data.selected"
-        :disabled="data.disabled"
-        @click:close="data.parent.selectItem(data.item)"
+        v-for="category in categories"
+        :key="category.id"
+        filter
+        outlined
+        :value="category.id"
       >
-        {{ $i18n.t(`categories.${data.item}`) }}
+        {{ $i18n.t(`categories.${category.id}`) }}
       </v-chip>
-    </template>
-  </v-combobox>
+    </v-chip-group>
+  </div>
 </template>
 
 <script>
