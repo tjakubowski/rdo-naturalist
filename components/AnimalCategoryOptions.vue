@@ -4,6 +4,7 @@
     close-on-content-click
     tooltip-id="category.options"
     :items="categoryOptions"
+    icon-attribute="icon"
     method-attribute="method"
   >
     <v-icon>mdi-dots-vertical</v-icon>
@@ -21,8 +22,13 @@ export default {
         {
           id: 'category.complete_progress',
           method: this.completeCategoryProgress,
+          icon: 'mdi-check-all',
         },
-        { id: 'category.reset_progress', method: this.resetCategoryProgress },
+        {
+          id: 'category.reset_progress',
+          method: this.resetCategoryProgress,
+          icon: 'mdi-restore',
+        },
       ],
     };
   },
