@@ -16,7 +16,7 @@
         <v-list-item
           v-for="(value, statName) in progress"
           :key="statName"
-          color="primary"
+          color="success"
           :value="statName"
         >
           <template v-slot:default="{ active, toggle }">
@@ -24,6 +24,7 @@
               <v-checkbox
                 :input-value="active"
                 :true-value="statName"
+                color="success"
                 @click.stop="toggle"
               />
             </v-list-item-action>
