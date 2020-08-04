@@ -12,18 +12,24 @@
       <v-spacer />
 
       <v-btn
-        color="error"
-        class="mx-3"
-        text
-        @click="resetCategory(category.id)"
-        >{{ $i18n.t('category.reset_progress') }}</v-btn
-      >
-      <v-btn
+        class="mr-3"
         color="success"
         :disabled="!isCompleted"
         @click="tradeInCategory(category.id)"
         >{{ $i18n.t('category.trade_in') }}</v-btn
       >
+
+      <dropdown-button
+        icon
+        clone-on-content-click
+        tooltip-id="category.more"
+        :items="categoryOptions"
+      >
+        <v-icon>mdi-dots-vertical</v-icon>
+        <template v-slot:item="{ item }">
+          <div @click="item.method(category.id)">{{ $i18n.t(item.id) }}</div>
+        </template>
+      </dropdown-button>
     </v-col>
 
     <animal-category-item
@@ -37,10 +43,11 @@
 
 <script>
 import { mapActions } from 'vuex';
+import DropdownButton from '@/components/DropdownButton';
 import AnimalCategoryItem from '~/components/AnimalCategoryItem';
 export default {
   name: 'AnimalCategory',
-  components: { AnimalCategoryItem },
+  components: { DropdownButton, AnimalCategoryItem },
   props: {
     category: {
       type: Object,
@@ -54,6 +61,13 @@ export default {
       type: Array,
       required: true,
     },
+  },
+  data() {
+    return {
+      categoryOptions: [
+        { id: 'category.reset_progress', method: this.resetCategory },
+      ],
+    };
   },
   computed: {
     isCompleted() {

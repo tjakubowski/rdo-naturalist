@@ -1,9 +1,15 @@
 <template>
-  <v-menu bottom offset-y>
+  <v-menu bottom offset-y :close-on-content-click="cloneOnContentClick">
     <template v-slot:activator="{ on: menu, attrs }">
       <v-tooltip bottom :open-delay="openDelay">
         <template v-slot:activator="{ on: tooltip }">
-          <v-btn depressed v-bind="attrs" v-on="{ ...tooltip, ...menu }"
+          <v-btn
+            :icon="icon"
+            :text="text"
+            :color="color"
+            depressed
+            v-bind="attrs"
+            v-on="{ ...tooltip, ...menu }"
             ><slot></slot
           ></v-btn>
         </template>
@@ -69,6 +75,22 @@ export default {
     openDelay: {
       type: Number,
       default: 500,
+    },
+    cloneOnContentClick: {
+      type: Boolean,
+      default: false,
+    },
+    icon: {
+      type: Boolean,
+      default: false,
+    },
+    text: {
+      type: Boolean,
+      default: false,
+    },
+    color: {
+      type: String,
+      default: null,
     },
   },
   computed: {
