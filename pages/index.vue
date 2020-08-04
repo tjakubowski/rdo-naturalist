@@ -2,25 +2,35 @@
   <div>
     <v-row>
       <v-col class="text-right">
-        <v-btn color="error" text @click="resetCategoriesProgress">{{
-          $i18n.t('category.reset_progress_all')
-        }}</v-btn></v-col
-      >
+        <v-btn color="error" text @click="resetCategoriesProgress">
+          {{ $i18n.t('category.reset_progress_all') }}
+        </v-btn>
+      </v-col>
     </v-row>
-    <v-row
-      ><v-col><category-filters :categories="categories" /></v-col
-    ></v-row>
+
+    <v-row>
+      <v-col>
+        <category-filters :categories="categories" />
+      </v-col>
+    </v-row>
+
     <animal-category
       v-for="category in categories"
-      v-show="
-        animalsFiltered(category.id).length > 0 &&
-        !isCategoryFiltered(category.id)
-      "
+      v-show="animalsInCategoryFilteredList(category.id).length > 0"
       :key="category.id"
       :category="category"
-      :animals="animals(category.id)"
-      :animals-filtered="animalsFiltered(category.id)"
+      :animals="animalsInCategory(category.id)"
+      :animals-filtered="animalsInCategoryFilteredList(category.id)"
     />
+
+    <v-row v-show="animalsFiltered.length === 0">
+      <v-col class="text-center my-5">
+        <p>{{ $i18n.t('filters.no_animals') }}</p>
+        <v-btn depressed @click="resetFilters">
+          {{ $i18n.t('filters.reset_filters') }}
+        </v-btn>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -34,32 +44,35 @@ export default {
   computed: {
     ...mapState('filters', ['animalNameFilter']),
     ...mapGetters({
+      animals: 'animals/getAnimals',
       categories: 'categories/getCategories',
       animalNameFilter: 'filters/getAnimalNameFilter',
       categoryFilters: 'filters/getCategoryFilters',
     }),
+    animalsFiltered() {
+      return this.animals.filter((animal) => {
+        if (
+          this.categoryFilters.length > 0 &&
+          !this.categoryFilters.includes(animal.category)
+        )
+          return false;
+        return this.$i18n
+          .t(`animals.${animal.id}`)
+          .toLowerCase()
+          .includes(this.animalNameFilter.toLowerCase());
+      });
+    },
   },
   methods: {
     ...mapActions('categories', ['resetCategoriesProgress']),
-    animals(category) {
+    ...mapActions('filters', ['resetFilters']),
+    animalsInCategory(category) {
       return this.$store.getters['animals/getAnimalsWithCategory'](category);
     },
-    animalsFiltered(category) {
-      return this.animals(category)
-        .filter((animal) =>
-          this.$i18n
-            .t(`animals.${animal.id}`)
-            .toLowerCase()
-            .includes(this.animalNameFilter.toLowerCase())
-        )
+    animalsInCategoryFilteredList(category) {
+      return this.animalsFiltered
+        .filter((animal) => animal.category === category)
         .map((animal) => animal.id);
-    },
-    isCategoryFiltered(category) {
-      return !(
-        this.categoryFilters === null ||
-        this.categoryFilters.length === 0 ||
-        this.categoryFilters.includes(category)
-      );
     },
   },
 };

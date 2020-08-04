@@ -24,4 +24,8 @@ export const actions = {
   setCategoryFilters({ state, commit }, categoryFilters) {
     commit('SET_CATEGORY_FILTERS', categoryFilters);
   },
+  resetFilters({ commit }) {
+    commit('SET_ANIMAL_NAME_FILTER', '');
+    commit('SET_CATEGORY_FILTERS', []);
+  },
 };

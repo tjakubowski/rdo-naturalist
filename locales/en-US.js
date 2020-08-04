@@ -1,6 +1,7 @@
 export default {
   filters: {
     category_filters: 'Filter categories',
+    reset_filters: 'Reset filters',
     animal_filter: 'Search animals',
     no_animals: 'No animals found',
   },
