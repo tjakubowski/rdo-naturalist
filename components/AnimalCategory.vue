@@ -1,6 +1,6 @@
 <template>
   <v-row class="animal-category">
-    <v-col cols="12" class="d-flex align-center">
+    <v-col cols="12" sm="6" class="d-flex align-center">
       <h2 class="animal-category__header">
         {{ $t(`categories.${category.id}`) }}
       </h2>
@@ -8,9 +8,9 @@
       <v-chip class="mx-5" small>
         {{ animalsStampedCount }} / {{ animalsCount }}
       </v-chip>
+    </v-col>
 
-      <v-spacer />
-
+    <v-col cols="12" sm="6" class="d-flex align-center justify-end">
       <v-btn
         class="mr-3"
         color="success"
