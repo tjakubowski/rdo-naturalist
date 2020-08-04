@@ -8,7 +8,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -24,7 +23,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -40,7 +38,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -56,7 +53,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -72,7 +68,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -88,7 +83,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -104,7 +98,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -120,7 +113,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -136,7 +128,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -152,7 +143,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -168,7 +158,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         killed: false,
         skinned: false,
@@ -184,7 +173,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -201,7 +189,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -218,7 +205,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -235,7 +221,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -252,7 +237,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -269,7 +253,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -286,7 +269,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -303,7 +285,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -320,7 +301,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -337,7 +317,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -354,7 +333,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -371,7 +349,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -388,7 +365,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -405,7 +381,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -422,7 +397,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -439,7 +413,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -456,7 +429,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -473,7 +445,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -490,7 +461,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -507,7 +477,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -524,7 +493,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -541,7 +509,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -558,7 +525,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -575,7 +541,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -592,7 +557,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -609,7 +573,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -626,7 +589,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -643,7 +605,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -660,7 +621,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -677,7 +637,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -694,7 +653,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -711,7 +669,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -728,7 +685,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -745,7 +701,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -762,7 +717,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -779,7 +733,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -796,7 +749,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -813,7 +765,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -830,7 +781,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -847,7 +797,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -864,7 +813,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -881,7 +829,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -898,7 +845,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -915,7 +861,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -932,7 +877,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -949,7 +893,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -966,7 +909,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -983,7 +925,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1000,7 +941,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1017,7 +957,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1034,7 +973,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1051,7 +989,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1068,7 +1005,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1085,7 +1021,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1102,7 +1037,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1117,7 +1051,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1132,7 +1065,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1147,7 +1079,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1162,7 +1093,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1177,7 +1107,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1192,7 +1121,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1207,7 +1135,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1222,7 +1149,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1237,7 +1163,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1252,7 +1177,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1267,7 +1191,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1284,7 +1207,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1301,7 +1223,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1318,7 +1239,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1335,7 +1255,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1352,7 +1271,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1369,7 +1287,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1386,7 +1303,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1403,7 +1319,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1420,7 +1335,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: true,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1437,7 +1351,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1454,7 +1367,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1471,7 +1383,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1488,7 +1399,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1505,7 +1415,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1522,7 +1431,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1539,7 +1447,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1556,7 +1463,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1573,7 +1479,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1590,7 +1495,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: true,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1607,7 +1511,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1624,7 +1527,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1641,7 +1543,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1658,7 +1559,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1675,7 +1575,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1692,7 +1591,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1709,7 +1607,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1726,7 +1623,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1743,7 +1639,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1760,7 +1655,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1777,7 +1671,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1794,7 +1687,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1811,7 +1703,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1828,7 +1719,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1845,7 +1735,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1862,7 +1751,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1879,7 +1767,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1896,7 +1783,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1913,7 +1799,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1930,7 +1815,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1947,7 +1831,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: false,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,
@@ -1964,7 +1847,6 @@ export const state = () => ({
       stamped: false,
       samples: 0,
       playstationOnly: true,
-      isLocked: false,
       progress: {
         tracked: false,
         killed: false,

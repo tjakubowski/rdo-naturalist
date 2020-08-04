@@ -8,8 +8,7 @@
         height="200px"
       >
         <v-card-title class="animal-category__item-title">
-          <span v-if="!animal.isLocked">{{ $t(`animals.${animal.id}`) }}</span>
-          <v-icon v-else>mdi-lock</v-icon>
+          {{ $t(`animals.${animal.id}`) }}
         </v-card-title>
       </v-img>
 
@@ -94,9 +93,7 @@ export default {
       return (this.progressStatsCompletedCount / this.progressStatsCount) * 100;
     },
     canBeStamped() {
-      return (
-        !this.animal.stamped && this.animal.samples > 0 && !this.animal.isLocked
-      );
+      return !this.animal.stamped && this.animal.samples > 0;
     },
     computedClasses() {
       return {
