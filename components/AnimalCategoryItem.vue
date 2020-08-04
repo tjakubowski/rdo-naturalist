@@ -45,6 +45,7 @@
         >
           <v-icon small>mdi-stamper</v-icon>
         </tooltip-button>
+
         <tooltip-button
           v-else
           tooltip="revert_stamp"
@@ -90,7 +91,9 @@ export default {
       return (this.progressStatsCompletedCount / this.progressStatsCount) * 100;
     },
     canBeStamped() {
-      return !this.animal.stamped && this.animal.samples > 0;
+      return (
+        !this.animal.stamped && this.animal.samples > 0 && !this.animal.isLocked
+      );
     },
     computedClasses() {
       return {
