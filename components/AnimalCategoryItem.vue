@@ -7,11 +7,10 @@
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="200px"
       >
-        <v-card-title
-          v-if="!animal.isLocked"
-          class="animal-category__item-title"
-          v-text="$t(`animals.${animal.id}`)"
-        />
+        <v-card-title class="animal-category__item-title">
+          <span v-if="!animal.isLocked">{{ $t(`animals.${animal.id}`) }}</span>
+          <v-icon v-else>mdi-lock</v-icon>
+        </v-card-title>
       </v-img>
 
       <v-progress-linear :value="progressPercentage" height="3" color="white" />
