@@ -1,12 +1,14 @@
 export default {
   filters: {
     category_filters: 'Filtry kategorii',
-    search_animals: 'Znajdź zwierzę',
+    animal_filter: 'Szukaj zwierząt',
     no_animals: 'Nie znaleziono zwierząt',
   },
   category: {
     trade_in: 'Przekaż',
-    reset_progress: 'Zresetuj kategorię',
+    options: 'Opcje',
+    complete_progress: 'Ukończ kategorię',
+    reset_progress: 'Zresetuj postęp kategorii',
     reset_progress_all: 'Zresetuj cały postęp',
   },
   animal: {

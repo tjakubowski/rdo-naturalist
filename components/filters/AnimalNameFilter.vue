@@ -1,13 +1,13 @@
 <template>
   <v-text-field
-    v-model="searchText"
+    v-model="animalNameFilter"
     rounded
     dense
     hide-details
     filled
     prepend-inner-icon="mdi-magnify"
     clearable
-    :placeholder="$i18n.t('filters.search_animals')"
+    :placeholder="$i18n.t('filters.animal_filter')"
   />
 </template>
 
@@ -15,19 +15,19 @@
 import { mapActions } from 'vuex';
 import debounce from 'lodash.debounce';
 export default {
-  name: 'TheSearch',
+  name: 'AnimalNameFilter',
   computed: {
-    searchText: {
+    animalNameFilter: {
       get() {
-        return this.$store.state.filters.searchText;
+        return this.$store.state.filters.animalNameFilter;
       },
       set: debounce(function (value) {
-        this.setSearchText(value);
+        this.setAnimalNameFilter(value);
       }, 300),
     },
   },
   methods: {
-    ...mapActions('filters', ['setSearchText']),
+    ...mapActions('filters', ['setAnimalNameFilter']),
   },
 };
 </script>

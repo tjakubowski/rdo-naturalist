@@ -3,7 +3,7 @@ export default {
   animal_progress: '전체 진행 상황',
   filters: {
     category_filters: null,
-    search_animals: null,
+    animal_filter: null,
     no_animals: null,
   },
   category: {

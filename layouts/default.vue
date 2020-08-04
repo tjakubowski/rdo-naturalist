@@ -1,13 +1,15 @@
 <template>
   <v-app dark>
     <v-app-bar fixed app>
-      <the-search class="mr-3" />
+      <animal-name-filter class="mr-3" />
 
       <dropdown-button
         :items="availablePlatforms"
         prepend-item-translation="platforms"
+        emit-attribute="id"
         icon-attribute="icon"
         tooltip-id="settings.change_platform"
+        close-on-content-click
         @click="setPlatform"
       >
         <v-icon small>{{ platform.icon }}</v-icon>
@@ -19,12 +21,10 @@
         id-attribute="code"
         translation-attribute="name"
         tooltip-id="settings.change_language"
+        close-on-content-click
         @click="$i18n.setLocale"
       >
         {{ currentLanguge }}
-        <template v-slot:item="{ item }">
-          {{ item.name }}
-        </template>
       </dropdown-button>
     </v-app-bar>
     <v-main>
@@ -36,12 +36,12 @@
 </template>
 
 <script>
-import DropdownButton from '@/components/DropdownButton';
+import DropdownButton from '@/components/common/DropdownButton';
 import { mapActions, mapGetters } from 'vuex';
-import TheSearch from '~/components/TheSearch';
+import AnimalNameFilter from '@/components/filters/AnimalNameFilter';
 
 export default {
-  components: { DropdownButton, TheSearch },
+  components: { DropdownButton, AnimalNameFilter },
   computed: {
     ...mapGetters({
       platform: 'platform/getPlatform',

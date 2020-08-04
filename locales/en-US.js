@@ -1,11 +1,13 @@
 export default {
   filters: {
-    category_filters: 'Category filters',
-    search_animals: 'Search animals',
+    category_filters: 'Filter categories',
+    animal_filter: 'Search animals',
     no_animals: 'No animals found',
   },
   category: {
     trade_in: 'Trade in',
+    options: 'Options',
+    complete_progress: 'Complete category',
     reset_progress: 'Reset category progress',
     reset_progress_all: 'Reset progress',
   },

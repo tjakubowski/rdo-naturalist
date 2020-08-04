@@ -1,5 +1,5 @@
 <template>
-  <v-menu bottom offset-y :close-on-content-click="cloneOnContentClick">
+  <v-menu bottom offset-y :close-on-content-click="closeOnContentClick">
     <template v-slot:activator="{ on: menu, attrs }">
       <v-tooltip bottom :open-delay="openDelay">
         <template v-slot:activator="{ on: tooltip }">
@@ -21,7 +21,7 @@
       <v-list-item
         v-for="item in items"
         :key="item[idAttribute]"
-        @click="$emit('click', item[emitAttribute])"
+        @click="onClick(item)"
       >
         <v-list-item-icon v-if="iconAttribute !== null">
           <v-icon small v-text="item[iconAttribute]" />
@@ -29,9 +29,7 @@
 
         <v-list-item-content>
           <v-list-item-title>
-            <slot name="item" :item="item">
-              {{ $i18n.t(getItemTranslationId(item[translationAttribute])) }}
-            </slot>
+            {{ $i18n.t(getItemTranslationId(item[translationAttribute])) }}
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
@@ -62,7 +60,11 @@ export default {
     },
     emitAttribute: {
       type: String,
-      default: 'id',
+      default: null,
+    },
+    methodAttribute: {
+      type: String,
+      default: null,
     },
     translationAttribute: {
       type: String,
@@ -76,7 +78,7 @@ export default {
       type: Number,
       default: 500,
     },
-    cloneOnContentClick: {
+    closeOnContentClick: {
       type: Boolean,
       default: false,
     },
@@ -102,11 +104,13 @@ export default {
   methods: {
     ...mapActions('platform', ['setPlatform']),
     getItemTranslationId(attribute) {
-      return (
-        (this.prependItemTranslation !== null
-          ? `${this.prependItemTranslation}.`
-          : '') + attribute
-      );
+      return [this.prependItemTranslation, attribute].filter(Boolean).join('.');
+    },
+    onClick(item) {
+      if (!!this.emitAttribute && !!item[this.emitAttribute])
+        this.$emit('click', item[this.emitAttribute]);
+      if (!!this.methodAttribute && !!item[this.methodAttribute])
+        item[this.methodAttribute]();
     },
   },
 };

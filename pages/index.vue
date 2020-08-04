@@ -1,9 +1,15 @@
 <template>
   <div>
-    <v-btn color="error" class="mx-3" text @click="resetCategories">{{
-      $i18n.t('category.reset_progress_all')
-    }}</v-btn>
-    <the-category-filters :categories="categories" />
+    <v-row>
+      <v-col class="text-right">
+        <v-btn color="error" text @click="resetCategoriesProgress">{{
+          $i18n.t('category.reset_progress_all')
+        }}</v-btn></v-col
+      >
+    </v-row>
+    <v-row
+      ><v-col><category-filters :categories="categories" /></v-col
+    ></v-row>
     <animal-category
       v-for="category in categories"
       v-show="
@@ -20,21 +26,21 @@
 
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex';
-import TheCategoryFilters from '@/components/TheCategoryFilters';
+import CategoryFilters from '@/components/filters/CategoryFilters';
 import AnimalCategory from '~/components/AnimalCategory';
 
 export default {
-  components: { TheCategoryFilters, AnimalCategory },
+  components: { CategoryFilters, AnimalCategory },
   computed: {
-    ...mapState('filters', ['searchText']),
+    ...mapState('filters', ['animalNameFilter']),
     ...mapGetters({
       categories: 'categories/getCategories',
-      searchText: 'filters/getSearchText',
+      animalNameFilter: 'filters/getAnimalNameFilter',
       categoryFilters: 'filters/getCategoryFilters',
     }),
   },
   methods: {
-    ...mapActions('categories', ['resetCategories']),
+    ...mapActions('categories', ['resetCategoriesProgress']),
     animals(category) {
       return this.$store.getters['animals/getAnimalsWithCategory'](category);
     },
@@ -44,7 +50,7 @@ export default {
           this.$i18n
             .t(`animals.${animal.id}`)
             .toLowerCase()
-            .includes(this.searchText.toLowerCase())
+            .includes(this.animalNameFilter.toLowerCase())
         )
         .map((animal) => animal.id);
     },

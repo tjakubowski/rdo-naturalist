@@ -66,7 +66,7 @@
 <script>
 import { mapActions } from 'vuex';
 import AnimalCategoryItemProgress from '@/components/AnimalCategoryItemProgress';
-import TooltipButton from '~/components/TooltipButton';
+import TooltipButton from '@/components/common/TooltipButton';
 
 export default {
   name: 'AnimalCategoryItem',

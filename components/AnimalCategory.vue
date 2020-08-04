@@ -19,17 +19,10 @@
         >{{ $i18n.t('category.trade_in') }}</v-btn
       >
 
-      <dropdown-button
-        icon
-        clone-on-content-click
-        tooltip-id="category.more"
-        :items="categoryOptions"
-      >
-        <v-icon>mdi-dots-vertical</v-icon>
-        <template v-slot:item="{ item }">
-          <div @click="item.method(category.id)">{{ $i18n.t(item.id) }}</div>
-        </template>
-      </dropdown-button>
+      <animal-category-options
+        @reset-category="resetCategoryProgress(category.id)"
+        @complete-category="completeCategoryProgress(category.id)"
+      />
     </v-col>
 
     <animal-category-item
@@ -43,11 +36,11 @@
 
 <script>
 import { mapActions } from 'vuex';
-import DropdownButton from '@/components/DropdownButton';
+import AnimalCategoryOptions from '@/components/AnimalCategoryOptions';
 import AnimalCategoryItem from '~/components/AnimalCategoryItem';
 export default {
   name: 'AnimalCategory',
-  components: { DropdownButton, AnimalCategoryItem },
+  components: { AnimalCategoryOptions, AnimalCategoryItem },
   props: {
     category: {
       type: Object,
@@ -62,13 +55,6 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      categoryOptions: [
-        { id: 'category.reset_progress', method: this.resetCategory },
-      ],
-    };
-  },
   computed: {
     isCompleted() {
       return this.animals.every((animal) => animal.stamped);
@@ -81,7 +67,11 @@ export default {
     },
   },
   methods: {
-    ...mapActions('categories', ['tradeInCategory', 'resetCategory']),
+    ...mapActions('categories', [
+      'tradeInCategory',
+      'resetCategoryProgress',
+      'completeCategoryProgress',
+    ]),
   },
 };
 </script>

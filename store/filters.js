@@ -1,16 +1,16 @@
 export const state = () => ({
-  searchText: '',
+  animalNameFilter: '',
   categoryFilters: [],
 });
 
 export const getters = {
-  getSearchText: (state) => state.searchText || '',
+  getAnimalNameFilter: (state) => state.animalNameFilter || '',
   getCategoryFilters: (state) => state.categoryFilters || [],
 };
 
 export const mutations = {
-  SET_SEARCH_TEXT(state, searchText) {
-    state.searchText = searchText;
+  SET_ANIMAL_NAME_FILTER(state, animalNameFilter) {
+    state.animalNameFilter = animalNameFilter;
   },
   SET_CATEGORY_FILTERS(state, categoryFilters) {
     state.categoryFilters = categoryFilters;
@@ -18,8 +18,8 @@ export const mutations = {
 };
 
 export const actions = {
-  setSearchText({ state, commit }, searchText) {
-    commit('SET_SEARCH_TEXT', searchText);
+  setAnimalNameFilter({ state, commit }, animalNameFilter) {
+    commit('SET_ANIMAL_NAME_FILTER', animalNameFilter);
   },
   setCategoryFilters({ state, commit }, categoryFilters) {
     commit('SET_CATEGORY_FILTERS', categoryFilters);

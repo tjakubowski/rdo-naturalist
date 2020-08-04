@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'TheCategoryFilters',
+  name: 'CategoryFilters',
   props: {
     categories: {
       type: Array,

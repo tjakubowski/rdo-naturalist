@@ -1,7 +1,7 @@
 export default {
   filters: {
     category_filters: null,
-    search_animals: null,
+    animal_filter: null,
     no_animals: null,
   },
   category: {
