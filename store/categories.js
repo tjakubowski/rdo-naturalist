@@ -73,6 +73,13 @@ export const actions = {
       dispatch('animals/completeAnimalProgress', animal.id, { root: true })
     );
   },
+  completeCategoriesProgress({ dispatch, rootGetters }) {
+    const animals = rootGetters['animals/getAnimals'];
+
+    animals.forEach((animal) =>
+      dispatch('animals/completeAnimalProgress', animal.id, { root: true })
+    );
+  },
   resetCategoryProgress({ dispatch, rootGetters }, id) {
     const animals = rootGetters['animals/getAnimalsWithCategory'](id);
 
@@ -80,7 +87,7 @@ export const actions = {
       dispatch('animals/resetAnimalProgress', animal.id, { root: true })
     );
   },
-  resetCategoriesProgress({ rootGetters, dispatch }) {
+  resetCategoriesProgress({ dispatch, rootGetters }) {
     const animals = rootGetters['animals/getAnimals'];
 
     animals.forEach((animal) =>
