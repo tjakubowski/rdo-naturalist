@@ -2189,4 +2189,10 @@ export const actions = {
     commit('SET_STAMPED', { id, value: false });
     commit('SET_SAMPLES', { id, value: 0 });
   },
+  completeAnimalProgress({ state, commit, dispatch }, id) {
+    dispatch('setProgress', {
+      id,
+      progress: Object.keys(state.animals[id].progress),
+    });
+  },
 };

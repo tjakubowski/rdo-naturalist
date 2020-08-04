@@ -66,6 +66,13 @@ export const actions = {
       )
     );
   },
+  completeCategoryProgress({ dispatch, rootGetters }, id) {
+    const animals = rootGetters['animals/getAnimalsWithCategory'](id);
+
+    animals.forEach((animal) =>
+      dispatch('animals/completeAnimalProgress', animal.id, { root: true })
+    );
+  },
   resetCategory({ dispatch, rootGetters }, id) {
     const animals = rootGetters['animals/getAnimalsWithCategory'](id);
 
