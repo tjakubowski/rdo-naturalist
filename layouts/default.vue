@@ -26,6 +26,17 @@
       >
         {{ currentLanguge }}
       </dropdown-button>
+
+      <dropdown-button
+        icon
+        close-on-content-click
+        tooltip-id="category.options"
+        :items="options"
+        icon-attribute="icon"
+        method-attribute="method"
+      >
+        <v-icon>mdi-dots-vertical</v-icon>
+      </dropdown-button>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -42,6 +53,22 @@ import AnimalNameFilter from '@/components/filters/AnimalNameFilter';
 
 export default {
   components: { DropdownButton, AnimalNameFilter },
+  data() {
+    return {
+      options: [
+        {
+          id: 'category.complete_progress_all',
+          method: this.completeCategoriesProgress,
+          icon: 'mdi-check-all',
+        },
+        {
+          id: 'category.reset_progress_all',
+          method: this.resetCategoriesProgress,
+          icon: 'mdi-restore',
+        },
+      ],
+    };
+  },
   computed: {
     ...mapGetters({
       platform: 'platform/getPlatform',
@@ -55,6 +82,10 @@ export default {
     },
   },
   methods: {
+    ...mapActions('categories', [
+      'completeCategoriesProgress',
+      'resetCategoriesProgress',
+    ]),
     ...mapActions('platform', ['setPlatform']),
   },
 };
