@@ -18,7 +18,7 @@ export default {
   computed: {
     searchText: {
       get() {
-        return this.$store.state.search.searchText;
+        return this.$store.state.filters.searchText;
       },
       set: debounce(function (value) {
         this.setSearchText(value);
@@ -26,7 +26,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions('search', ['setSearchText']),
+    ...mapActions('filters', ['setSearchText']),
   },
 };
 </script>

@@ -1,7 +1,11 @@
 <template>
   <div>
+    <v-btn color="error" class="mx-3" outlined @click="resetCategories">{{
+      $i18n.t('reset_categories')
+    }}</v-btn>
+    <the-category-filters :categories="categories" />
     <animal-category
-      v-for="category in categories"
+      v-for="category in categoriesFiltered"
       v-show="animalsFiltered(category.id).length > 0"
       :key="category.id"
       :category="category"
@@ -12,19 +16,30 @@
 </template>
 
 <script>
-import { mapGetters, mapState } from 'vuex';
+import { mapActions, mapGetters, mapState } from 'vuex';
+import TheCategoryFilters from '@/components/TheCategoryFilters';
 import AnimalCategory from '~/components/AnimalCategory';
 
 export default {
-  components: { AnimalCategory },
+  components: { TheCategoryFilters, AnimalCategory },
   computed: {
-    ...mapState('search', ['searchText']),
+    ...mapState('filters', ['searchText']),
     ...mapGetters({
       categories: 'categories/getCategories',
-      searchText: 'search/getSearchText',
+      searchText: 'filters/getSearchText',
+      categoryFilters: 'filters/getCategoryFilters',
     }),
+    categoriesFiltered() {
+      return this.categoryFilters === null || this.categoryFilters.length === 0
+        ? this.categories
+        : this.categories.filter(({ id }) => {
+            console.log(id);
+            return this.categoryFilters.includes(id);
+          });
+    },
   },
   methods: {
+    ...mapActions('categories', ['resetCategories']),
     animals(category) {
       return this.$store.getters['animals/getAnimalsWithCategory'](category);
     },
