@@ -27,7 +27,8 @@
     </v-col>
 
     <animal-category-item
-      v-for="animal in animalsFiltered"
+      v-for="animal in animals"
+      v-show="animalsFiltered.includes(animal.id)"
       :key="animal.id"
       :animal="animal"
     />

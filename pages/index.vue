@@ -5,8 +5,11 @@
     }}</v-btn>
     <the-category-filters :categories="categories" />
     <animal-category
-      v-for="category in categoriesFiltered"
-      v-show="animalsFiltered(category.id).length > 0"
+      v-for="category in categories"
+      v-show="
+        animalsFiltered(category.id).length > 0 &&
+        !isCategoryFiltered(category.id)
+      "
       :key="category.id"
       :category="category"
       :animals="animals(category.id)"
@@ -29,14 +32,6 @@ export default {
       searchText: 'filters/getSearchText',
       categoryFilters: 'filters/getCategoryFilters',
     }),
-    categoriesFiltered() {
-      return this.categoryFilters === null || this.categoryFilters.length === 0
-        ? this.categories
-        : this.categories.filter(({ id }) => {
-            console.log(id);
-            return this.categoryFilters.includes(id);
-          });
-    },
   },
   methods: {
     ...mapActions('categories', ['resetCategories']),
@@ -44,11 +39,20 @@ export default {
       return this.$store.getters['animals/getAnimalsWithCategory'](category);
     },
     animalsFiltered(category) {
-      return this.animals(category).filter((animal) =>
-        this.$i18n
-          .t(`animals.${animal.id}`)
-          .toLowerCase()
-          .includes(this.searchText.toLowerCase())
+      return this.animals(category)
+        .filter((animal) =>
+          this.$i18n
+            .t(`animals.${animal.id}`)
+            .toLowerCase()
+            .includes(this.searchText.toLowerCase())
+        )
+        .map((animal) => animal.id);
+    },
+    isCategoryFiltered(category) {
+      return !(
+        this.categoryFilters === null ||
+        this.categoryFilters.length === 0 ||
+        this.categoryFilters.includes(category)
       );
     },
   },
