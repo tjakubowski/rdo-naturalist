@@ -1,5 +1,6 @@
 export default {
   trade_in_category: '取引する',
+  animal_progress: '総合進行状況',
   animal_stats: {
     tracked: '追跡した数',
     killed: '仕留めた数',

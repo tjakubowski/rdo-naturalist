@@ -1,5 +1,6 @@
 export default {
   trade_in_category: '交易',
+  animal_progress: '總進度',
   animal_stats: {
     tracked: '已追蹤',
     killed: '已殺死',

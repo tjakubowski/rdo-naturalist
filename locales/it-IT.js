@@ -1,5 +1,6 @@
 export default {
   trade_in_category: 'Consegna',
+  animal_progress: 'Progressi totali',
   animal_stats: {
     tracked: 'Esemplari seguiti',
     killed: 'Esemplari uccisi',

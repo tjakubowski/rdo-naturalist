@@ -1,5 +1,6 @@
 export default {
   trade_in_category: '보상 판매',
+  animal_progress: '전체 진행 상황',
   animal_stats: {
     tracked: '추적 완료',
     killed: '처치',

@@ -5,6 +5,7 @@ export default {
   increase_samples: 'Increase the number of samples',
   stamp_sample: 'Mark as stamped',
   revert_stamp: 'Undo',
+  animal_progress: 'Total Progress',
   settings: {
     change_language: 'Change language',
     change_platform: 'Change platform',

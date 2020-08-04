@@ -1,5 +1,6 @@
 export default {
   trade_in_category: 'Vendre',
+  animal_progress: 'Progression totale',
   animal_stats: {
     tracked: 'Pistés',
     killed: 'Tués',

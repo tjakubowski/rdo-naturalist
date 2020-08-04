@@ -5,6 +5,7 @@ export default {
   increase_samples: 'Zwiększ ilość próbek',
   stamp_sample: 'Oznacz jako ostemplowane',
   revert_stamp: 'Cofnij',
+  animal_progress: 'Łączne postępy',
   settings: {
     change_language: 'Zmień język',
     change_platform: 'Zmień platformę',

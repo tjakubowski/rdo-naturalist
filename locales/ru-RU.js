@@ -1,5 +1,6 @@
 export default {
   trade_in_category: 'Обменять',
+  animal_progress: 'Общий прогресс',
   animal_stats: {
     tracked: 'Выслежено',
     killed: 'Убито',

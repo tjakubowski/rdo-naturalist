@@ -1,5 +1,6 @@
 export default {
   trade_in_category: 'Intercambiar',
+  animal_progress: 'Progreso total',
   animal_stats: {
     tracked: 'Rastreados',
     killed: 'Abatidos',

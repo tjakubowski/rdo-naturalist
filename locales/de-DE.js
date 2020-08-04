@@ -1,5 +1,6 @@
 export default {
   trade_in_category: 'Eintauschen',
+  animal_progress: 'Gesamtfortschritt',
   animal_stats: {
     tracked: 'Aufgespürt',
     killed: 'Getötet',
