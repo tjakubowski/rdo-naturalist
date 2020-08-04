@@ -9,6 +9,7 @@
       >
         <v-card-title
           v-if="!animal.isLocked"
+          class="animal-category__item-title"
           v-text="$t(`animals.${animal.id}`)"
         />
       </v-img>
@@ -119,5 +120,9 @@ export default {
   &--muted {
     opacity: 0.5;
   }
+}
+.animal-category__item-title {
+  word-break: normal;
+  word-break: break-word;
 }
 </style>
