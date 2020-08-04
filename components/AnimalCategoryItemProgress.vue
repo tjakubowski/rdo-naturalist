@@ -16,6 +16,7 @@
         <v-list-item
           v-for="(value, statName) in progress"
           :key="statName"
+          color="primary"
           :value="statName"
         >
           <template v-slot:default="{ active, toggle }">

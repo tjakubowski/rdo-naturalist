@@ -14,7 +14,7 @@
         />
       </v-img>
 
-      <v-progress-linear :value="progressPercentage" height="3" />
+      <v-progress-linear :value="progressPercentage" height="3" color="white" />
 
       <v-card-actions>
         <tooltip-button
