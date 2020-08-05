@@ -16,15 +16,16 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'RDO: Animal Field Guide',
+    title: 'RDO: Animal Field Guide',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Red Dead Online Animal Field Guide. Helps you track your progress as a naturalist.',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -37,8 +38,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    { src: '~/plugins/vuex-persist', ssr: false }],
+  plugins: [{ src: '~/plugins/vuex-persist', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -55,11 +55,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    'nuxt-i18n'
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n'],
   i18n: {
     locales: [
       {
