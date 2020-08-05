@@ -9,9 +9,9 @@ export default {
     trade_in: 'Trade in',
     options: 'Options',
     complete_progress: 'Complete category research',
-    complete_progress_all: 'Complete all categories research',
+    complete_progress_all: 'Complete researches',
     reset_progress: 'Reset category research progress',
-    reset_progress_all: 'Reset research progress',
+    reset_progress_all: 'Reset progress',
   },
   animal: {
     progress: 'Total Progress',
