@@ -9,7 +9,6 @@
       <v-chip
         v-for="category in categories"
         :key="category.id"
-        filter
         outlined
         :value="category.id"
       >
