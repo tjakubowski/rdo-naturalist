@@ -52,7 +52,7 @@
             mx-3
             depressed
             text
-            src="https://github.com/tjakubowski/rdo-naturalist"
+            href="https://github.com/tjakubowski/rdo-naturalist"
           >
             <v-icon left>mdi-github</v-icon> github
           </v-btn>
