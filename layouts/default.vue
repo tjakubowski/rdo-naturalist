@@ -7,6 +7,7 @@
       <dropdown-button
         :items="availablePlatforms"
         prepend-item-translation="platforms"
+        btn-class="ml-3"
         emit-attribute="id"
         icon-attribute="icon"
         tooltip-id="settings.change_platform"
@@ -33,7 +34,6 @@
         close-on-content-click
         tooltip-id="category.options"
         :items="options"
-        btn-class="ml-3"
         icon-attribute="icon"
         method-attribute="method"
       >
@@ -45,6 +45,20 @@
         <nuxt />
       </v-container>
     </v-main>
+    <v-footer>
+      <v-row no-gutters>
+        <v-col class="text-center">
+          <v-btn
+            mx-3
+            depressed
+            text
+            src="https://github.com/tjakubowski/rdo-naturalist"
+          >
+            <v-icon left>mdi-github</v-icon> github
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
