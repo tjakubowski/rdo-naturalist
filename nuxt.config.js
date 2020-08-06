@@ -1,20 +1,10 @@
 import colors from 'vuetify/es5/util/colors';
 
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'spa',
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
-  target: 'server',
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
+  mode: 'spa',  target: 'static',
+  router: {
+    base: '/rdo-naturalist/',
+  },
   head: {
     titleTemplate: 'RDO: Animal Field Guide',
     title: 'RDO: Animal Field Guide',
@@ -30,31 +20,13 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  /*
-   ** Global CSS
-   */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
   plugins: [{ src: '~/plugins/vuex-persist', ssr: false }],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
   components: true,
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n'],
   i18n: {
     locales: [
@@ -132,15 +104,7 @@ export default {
       fallbackLocale: 'en',
     },
   },
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
   axios: {},
-  /*
-   ** vuetify module configuration
-   ** https://github.com/nuxt-community/vuetify-module
-   */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
@@ -158,14 +122,7 @@ export default {
       },
     },
   },
-  /*
-   ** Build configuration
-   ** See https://nuxtjs.org/api/configuration-build/
-   */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
