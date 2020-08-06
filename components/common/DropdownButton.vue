@@ -7,6 +7,7 @@
             :icon="icon"
             :text="text"
             :color="color"
+            :class="btnClass"
             depressed
             v-bind="attrs"
             v-on="{ ...tooltip, ...menu }"
@@ -42,6 +43,10 @@ import { mapActions, mapGetters } from 'vuex';
 export default {
   name: 'DropdownButton',
   props: {
+    btnClass: {
+      type: [Array, String, Object],
+      default: null,
+    },
     items: {
       type: Array,
       default: () => [],

@@ -1,7 +1,8 @@
 <template>
   <v-app dark>
     <v-app-bar fixed app>
-      <animal-name-filter class="mr-3" />
+      <h4 class="d-none d-sm-inline mr-3">RDO Animal Guide</h4>
+      <animal-name-filter />
 
       <dropdown-button
         :items="availablePlatforms"
@@ -32,6 +33,7 @@
         close-on-content-click
         tooltip-id="category.options"
         :items="options"
+        btn-class="ml-3"
         icon-attribute="icon"
         method-attribute="method"
       >
