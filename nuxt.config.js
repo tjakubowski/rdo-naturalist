@@ -91,7 +91,7 @@ export default {
         file: 'zh-CN.js',
       },
       {
-        name: '繁体中文',
+        name: '繁體中文',
         code: 'tw',
         file: 'zh-TW.js',
       },
