@@ -1,9 +1,13 @@
 import colors from 'vuetify/es5/util/colors';
 
+const routerBase =
+  process.env.NODE_ENV === 'production' ? '/rdo-naturalist/' : '/';
+
 export default {
-  mode: 'spa',  target: 'static',
+  mode: 'spa',
+  target: 'static',
   router: {
-    base: '/rdo-naturalist/',
+    base: routerBase,
   },
   head: {
     titleTemplate: 'RDO: Animal Field Guide',
@@ -17,16 +21,46 @@ export default {
         content:
           'Red Dead Online Animal Field Guide. Helps you track your progress as a naturalist.',
       },
+      { property: 'og:type', content: 'website' },
+      {
+        property: 'og:url',
+        content: 'https://tjakubowski.github.io/rdo-naturalist/',
+      },
+      { property: 'og:title', content: 'RDO: Animal Field Guide' },
+      {
+        property: 'og:description',
+        content:
+          'Red Dead Online Animal Field Guide. Helps you track your progress as a naturalist.',
+      },
+      { property: 'og:image', content: `https://tjakubowski.github.io/rdo-naturalist/images/meta-image.png` },
+      { property: 'twitter:card', content: 'summary_large_image' },
+      {
+        property: 'twitter:url',
+        content: 'https://tjakubowski.github.io/rdo-naturalist/',
+      },
+      { property: 'twitter:title', content: 'RDO: Animal Field Guide' },
+      {
+        property: 'twitter:description',
+        content:
+          'Red Dead Online Animal Field Guide. Helps you track your progress as a naturalist.',
+      },
+      {
+        property: 'twitter:image',
+        content: `https://tjakubowski.github.io/rdo-naturalist/images/meta-image.png`,
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: `${routerBase}favicon.ico`,
+      },
+    ],
   },
   css: [],
   plugins: [{ src: '~/plugins/vuex-persist', ssr: false }],
   components: true,
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/vuetify'],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n'],
   i18n: {
     locales: [
@@ -36,29 +70,29 @@ export default {
         file: 'en-US.js',
       },
       {
+        name: 'Español [ES]',
+        code: 'es',
+        file: 'es-ES.js',
+      },
+      {
+        name: 'Español [MX]',
+        code: 'mx',
+        file: 'es-MX.js',
+      },
+      {
         name: 'Deutsch',
         code: 'de',
         file: 'de-DE.js',
       },
       {
-        name: 'Español',
-        code: 'es',
-        file: 'es-ES.js',
+        name: 'Français',
+        code: 'fr',
+        file: 'fr-FR.js',
       },
       {
         name: 'Polski',
         code: 'pl',
         file: 'pl-PL.js',
-      },
-      {
-        name: 'Mexican',
-        code: 'mx',
-        file: 'es-MX.js',
-      },
-      {
-        name: 'Français',
-        code: 'fr',
-        file: 'fr-FR.js',
       },
       {
         name: 'Italiano',
@@ -123,6 +157,7 @@ export default {
     },
   },
   build: {
+    publicPath: '/nuxt/',
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

@@ -12,6 +12,7 @@
 
     <v-col cols="12" sm="6" class="d-flex align-center justify-end">
       <v-btn
+        v-if="category.tradable"
         class="mr-3"
         color="success"
         :disabled="!isCompleted"
@@ -30,6 +31,7 @@
       v-show="animalsFiltered.includes(animal.id)"
       :key="animal.id"
       :animal="animal"
+      :tradable="category.tradable"
     />
   </v-row>
 </template>

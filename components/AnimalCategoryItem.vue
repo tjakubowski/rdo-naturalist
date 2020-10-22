@@ -2,7 +2,7 @@
   <v-col cols="12" sm="6" md="4" lg="3" xl="2">
     <v-card :class="computedClasses">
       <v-img
-        :src="`/images/animals/${animal.id}.png`"
+        :src="`${$router.options.base}images/animals/${animal.id}.png`"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
         height="200px"
@@ -15,43 +15,47 @@
       <v-progress-linear :value="progressPercentage" height="3" color="white" />
 
       <v-card-actions>
-        <tooltip-button
-          :disabled="animal.samples < 1"
-          tooltip="animal.decrease_samples"
-          @click="decreaseSamples(animal.id)"
-        >
-          <v-icon small>mdi-minus</v-icon>
-        </tooltip-button>
+        <template v-if="tradable">
+          <tooltip-button
+            :disabled="animal.samples < 1"
+            tooltip="animal.decrease_samples"
+            @click="decreaseSamples(animal.id)"
+          >
+            <v-icon small>mdi-minus</v-icon>
+          </tooltip-button>
 
-        <v-chip class="mx-2" small>
-          {{ animal.samples }}
-        </v-chip>
+          <v-chip class="mx-2" small>
+            {{ animal.samples }}
+          </v-chip>
 
-        <tooltip-button
-          tooltip="animal.increase_samples"
-          @click="increaseSamples(animal.id)"
-        >
-          <v-icon small>mdi-plus</v-icon>
-        </tooltip-button>
+          <tooltip-button
+            tooltip="animal.increase_samples"
+            @click="increaseSamples(animal.id)"
+          >
+            <v-icon small>mdi-plus</v-icon>
+          </tooltip-button>
+        </template>
 
         <v-spacer></v-spacer>
 
-        <tooltip-button
-          v-if="!animal.stamped"
-          :disabled="!canBeStamped"
-          tooltip="animal.mark_as_stamped"
-          @click="stampSample(animal.id)"
-        >
-          <v-icon small>mdi-stamper</v-icon>
-        </tooltip-button>
+        <template v-if="tradable">
+          <tooltip-button
+            v-if="!animal.stamped"
+            :disabled="!canBeStamped"
+            tooltip="animal.mark_as_stamped"
+            @click="stampSample(animal.id)"
+          >
+            <v-icon small>mdi-stamper</v-icon>
+          </tooltip-button>
 
-        <tooltip-button
-          v-else
-          tooltip="animal.undo_stamp"
-          @click="revertStamp(animal.id)"
-        >
-          <v-icon small>mdi-restore</v-icon>
-        </tooltip-button>
+          <tooltip-button
+            v-else
+            tooltip="animal.undo_stamp"
+            @click="revertStamp(animal.id)"
+          >
+            <v-icon small>mdi-restore</v-icon>
+          </tooltip-button>
+        </template>
 
         <animal-category-item-progress
           :progress="animal.progress"
@@ -74,6 +78,10 @@ export default {
   name: 'AnimalCategoryItem',
   components: { AnimalCategoryItemProgress, TooltipButton },
   props: {
+    tradable: {
+      type: Boolean,
+      default: true,
+    },
     animal: {
       type: Object,
       required: true,
@@ -126,7 +134,7 @@ export default {
   }
 }
 .animal-category__item-title {
-  word-break: normal;
-  word-break: break-word;
+  word-break: normal !important;
+  word-break: break-word !important;
 }
 </style>

@@ -5,20 +5,8 @@
       <animal-name-filter />
 
       <dropdown-button
-        :items="availablePlatforms"
-        prepend-item-translation="platforms"
-        btn-class="ml-3"
-        emit-attribute="id"
-        icon-attribute="icon"
-        tooltip-id="settings.change_platform"
-        close-on-content-click
-        @click="setPlatform"
-      >
-        <v-icon small>{{ platform.icon }}</v-icon>
-      </dropdown-button>
-
-      <dropdown-button
         :items="languages"
+        btn-class="ml-3"
         emit-attribute="code"
         id-attribute="code"
         translation-attribute="name"

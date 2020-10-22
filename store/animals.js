@@ -1981,13 +1981,7 @@ export const state = () => ({
 });
 
 export const getters = {
-  getAnimals: (state, getters, rootState, rootGetters) =>
-    state.animalsList
-      .map((id) => state.animals[id])
-      .filter(
-        (animal) =>
-          !(animal.playstationOnly && !rootGetters['platform/isPlaystation'])
-      ),
+  getAnimals: (state) => state.animalsList.map((id) => state.animals[id]),
   getAnimalsWithCategory: (state, getters) => (category) =>
     getters.getAnimals.filter((animal) => animal.category === category),
 };

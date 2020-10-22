@@ -2,33 +2,43 @@ export const state = () => ({
   categories: {
     farmland: {
       id: 'farmland',
+      tradable: true,
     },
     desert: {
       id: 'desert',
+      tradable: true,
     },
     wetland: {
       id: 'wetland',
+      tradable: true,
     },
     mountain_and_grassland: {
       id: 'mountain_and_grassland',
+      tradable: true,
     },
     forest_and_river: {
       id: 'forest_and_river',
+      tradable: true,
     },
     common_critters: {
       id: 'common_critters',
+      tradable: false,
     },
     legendary_dark: {
       id: 'legendary_dark',
+      tradable: true,
     },
     legendary_light: {
       id: 'legendary_light',
+      tradable: true,
     },
     legendary_red_and_blonde: {
       id: 'legendary_red_and_blonde',
+      tradable: true,
     },
     legendary_patterned: {
       id: 'legendary_patterned',
+      tradable: true,
     },
   },
   categoriesList: [
